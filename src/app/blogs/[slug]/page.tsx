@@ -1,5 +1,9 @@
 import { readFileSync, readdirSync } from "fs";
 
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import remarkFrontmatter from "remark-frontmatter";
+
 export default async function BlogPage({
   params: { slug },
 }: {
@@ -9,9 +13,16 @@ export default async function BlogPage({
 
   return (
     <div>
-      <h1>Blog Page</h1>
-      <h2>slug: {JSON.stringify(slug)}</h2>
-      <div>{JSON.stringify(post)}</div>
+      <Markdown
+        remarkPlugins={[remarkGfm, remarkFrontmatter]}
+        components={{
+          h1: ({ node, ...props }) => (
+            <h1 className="text-3xl font-bold" {...props} />
+          ),
+        }}
+      >
+        {post}
+      </Markdown>
     </div>
   );
 }
