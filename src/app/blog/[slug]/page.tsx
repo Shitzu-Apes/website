@@ -3,6 +3,7 @@ import { readFileSync, readdirSync } from "fs";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkFrontmatter from "remark-frontmatter";
+import mdnameUtils from "@/utils/mdname";
 
 export default async function BlogPage({
   params: { slug },
@@ -33,7 +34,7 @@ export async function generateStaticParams() {
   return posts.map((post) => {
     console.log({ post });
     return {
-      slug: post.name.slice(0, -3),
+      slug: mdnameUtils.slugify(post.name),
     };
   });
 }
