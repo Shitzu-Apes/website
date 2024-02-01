@@ -1,3 +1,4 @@
+import ChainTab from "@/components/ChainTab";
 import Clipboard from "@/components/Clipboard";
 import Scene from "@/components/Scene";
 
@@ -22,12 +23,11 @@ export default function Home() {
             centralized dev team—just a 100% community-owned and driven
             initiative.
           </div>
-          <div className="mr-auto flex flex-col justify-stretch items-stretch text-lg">
-            Find us on Aurora
-            <Clipboard value="0x68e401b61ea53889505cc1366710f733a60c2d41" />
-            Or Migrate to Near
-            <Clipboard value="token.0xshitzu.near" />
-            Missed the migration? learn more
+          <div className="mr-auto flex flex-col justify-stretch items-stretch text-lg mt-4">
+            <span className="text-xl">Find us on</span>
+            <div className="mt-3">
+              <ChainTab />
+            </div>
           </div>
           <button></button>
         </div>
