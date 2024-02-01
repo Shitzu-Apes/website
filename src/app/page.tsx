@@ -1,24 +1,35 @@
+import Clipboard from "@/components/Clipboard";
 import Scene from "@/components/Scene";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="relative flex place-items-center h-[100vh] min-h-[100vh] w-full min-w-[100vh]">
-        <div className="w-3/5 h-full text-8xl font-bold text-white px-10 flex flex-col items-center justify-center">
+        <div className="w-3/5 h-full text-7xl font-bold text-white px-10 flex flex-col items-center justify-center">
           <div className="w-full">
-            WE ARE <span className="text-primary">SHITZU</span>
+            WE ARE <span className="text-primary">SHITZURIAN</span>
           </div>
           <div className="text-lg font-light text-pretty text-justify text-white mt-5">
-            Unparalleled in its design, $SHITZU sets itself apart as a meme
-            token like no other. With a 24-hour free and fair mint using the
-            innovative Proof of Finger consensus, a total supply of 576,167,000
-            tokens, and a fully verified contract, $SHITZU promises a unique and
+            Unparalleled in its design,{" "}
+            <span className="text-primary font-bold">$SHITZU</span> sets itself
+            apart as a meme token like no other. With a 24-hour free and fair
+            mint using the innovative{" "}
+            <span className="text-primary font-bold">Proof of Finger</span>{" "}
+            consensus, a total supply of{" "}
+            <span className="text-primary font-bold">576,167,000</span> tokens,
+            and a fully verified contract, $SHITZU promises a unique and
             transparent experience. What's more, there are no trading taxes, no
             centralized dev team—just a 100% community-owned and driven
             initiative.
           </div>
-          {/* Input with copy button */}
-          <div></div>
+          <div className="mr-auto flex flex-col justify-stretch items-stretch text-lg">
+            Find us on Aurora
+            <Clipboard value="0x68e401b61ea53889505cc1366710f733a60c2d41" />
+            Or Migrate to Near
+            <Clipboard value="token.0xshitzu.near" />
+            Missed the migration? learn more
+          </div>
+          <button></button>
         </div>
         <div className="w-2/5 h-full">
           <Scene />
