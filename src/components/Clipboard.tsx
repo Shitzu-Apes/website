@@ -9,7 +9,7 @@ export default function Clipboard({ value }: { value: string }) {
     <div className="max-w-full">
       <button
         type="button"
-        className="w-full relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary"
+        className="w-full relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary text-ellipsis"
         data-clipboard-target="#hs-clipboard-tooltip-on-hover"
         data-clipboard-action="copy"
         data-clipboard-success-text="Copied"
@@ -26,7 +26,7 @@ export default function Clipboard({ value }: { value: string }) {
           }, 2000);
         }}
       >
-        {innerWidth < 768 && value.length > 20
+        {value.length > 20
           ? `${value.slice(0, 8)}...${value.slice(-8)}`
           : value}
         <span className="border-s ps-3.5 dark:border-gray-700 ml-auto">

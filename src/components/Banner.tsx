@@ -40,10 +40,12 @@ export default function Banner() {
           Once Aurora's unique meme token, now also shining on Near!
         </p>
         <a
-          href="#"
+          href="https://near.org/marior.near/widget/ShitzuMigrate"
           className="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          target="_blank"
+          rel="noreferrer"
         >
-          Learn more <span aria-hidden="true">&rarr;</span>
+          Migrate Now <span aria-hidden="true">&rarr;</span>
         </a>
       </div>
       <div className="flex flex-1 justify-end"></div>

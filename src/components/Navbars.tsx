@@ -4,10 +4,6 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
-  PlayCircleIcon,
-  PlayIcon,
-  Square2StackIcon,
-  Square3Stack3DIcon,
   Squares2X2Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
@@ -75,7 +71,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div className="flex space-x-4">
                   <a
-                    href={"tg"}
+                    href={"https://twitter.com/shitzucommunity"}
                     className={classNames(
                       "rounded-md py-2 text-sm font-medium"
                     )}
@@ -84,7 +80,7 @@ export default function Navbar() {
                     <TwitterIcon className="h-6 w-6 text-primary" />
                   </a>
                   <a
-                    href={"tg"}
+                    href={"https://twitter.com/shitzucommunity"}
                     className={classNames(
                       "rounded-md py-2 text-sm font-medium"
                     )}
@@ -93,7 +89,7 @@ export default function Navbar() {
                     <TelegramIcon className="h-6 w-6 text-primary" />
                   </a>
                   <a
-                    href={"tg"}
+                    href={"https://github.com/Shitzu-Apes"}
                     className={classNames(
                       "rounded-md py-2 text-sm font-medium"
                     )}
@@ -122,11 +118,13 @@ export default function Navbar() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="https://www.trisolaris.io/#/swap?outputCurrency=0x68e401B61eA53889505cc1366710f733A60C2d41"
                             className={classNames(
                               active ? "bg-gray-100" : "",
                               "flex px-4 py-2 text-sm text-gray-700"
                             )}
+                            target="_blank"
+                            rel="noreferrer"
                           >
                             BUY on{" "}
                             <img
@@ -141,11 +139,13 @@ export default function Navbar() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="https://app.ref.finance/#near|token.0xshitzu.near"
                             className={classNames(
                               active ? "bg-gray-100" : "",
                               "flex items-center px-4 py-2 text-sm text-gray-700"
                             )}
+                            target="_blank"
+                            rel="noreferrer"
                           >
                             BUY on{" "}
                             <img
@@ -160,11 +160,13 @@ export default function Navbar() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="https://near.org/marior.near/widget/ShitzuMigrate"
                             className={classNames(
                               active ? "bg-gray-100" : "",
                               "flex items-center px-4 py-2 text-sm text-gray-700"
                             )}
+                            target="_blank"
+                            rel="noreferrer"
                           >
                             Migrate{" "}
                             <img
