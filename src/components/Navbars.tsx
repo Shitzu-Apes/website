@@ -3,7 +3,7 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { TelegramIcon, TwitterIcon } from "./Icons";
+import { GithubIcon, TelegramIcon, TwitterIcon } from "./Icons";
 
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
@@ -84,6 +84,15 @@ export default function Navbar() {
                   >
                     <TelegramIcon className="h-6 w-6 text-primary" />
                   </a>
+                  <a
+                    href={"tg"}
+                    className={classNames(
+                      "rounded-md py-2 text-sm font-medium"
+                    )}
+                    target="_blank"
+                  >
+                    <GithubIcon className="h-6 w-6 text-primary" />
+                  </a>
                 </div>
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-5">
@@ -108,10 +117,16 @@ export default function Navbar() {
                             href="#"
                             className={classNames(
                               active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
+                              "flex px-4 py-2 text-sm text-gray-700"
                             )}
                           >
-                            Your Profile
+                            BUY on{" "}
+                            <img
+                              className="mx-2 h-4 w-auto rounded-full"
+                              src="/trisolaris.png"
+                              alt="Ref Finance Logo"
+                            />{" "}
+                            Trisolaris
                           </a>
                         )}
                       </Menu.Item>
@@ -121,10 +136,40 @@ export default function Navbar() {
                             href="#"
                             className={classNames(
                               active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
+                              "flex items-center px-4 py-2 text-sm text-gray-700"
                             )}
                           >
-                            Settings
+                            BUY on{" "}
+                            <img
+                              className="h-6 w-auto rounded-full mx-2"
+                              src="/ref.png"
+                              alt="Ref Finance Logo"
+                            />
+                            Ref
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "flex items-center px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Migrate{" "}
+                            <img
+                              src="/aurora.png"
+                              alt="Aurora Logo"
+                              className="h-6 mx-2 w-auto rounded-full"
+                            />
+                            →
+                            <img
+                              src="/near.png"
+                              alt="near Logo"
+                              className="h-6 mx-2 w-auto rounded-full"
+                            />
                           </a>
                         )}
                       </Menu.Item>
