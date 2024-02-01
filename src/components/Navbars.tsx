@@ -2,7 +2,15 @@
 
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  PlayCircleIcon,
+  PlayIcon,
+  Square2StackIcon,
+  Square3Stack3DIcon,
+  Squares2X2Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 import { GithubIcon, TelegramIcon, TwitterIcon } from "./Icons";
 
 const navigation = [
@@ -97,8 +105,8 @@ export default function Navbar() {
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-5">
                   <div>
-                    <Menu.Button className="relative flex rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 px-6 py-2 items-center text-primary border-2 hover:bg-primary border-primary bg-transparent hover:text-black">
-                      ACTIONS
+                    <Menu.Button className="relative flex rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 items-center text-primary">
+                      <Squares2X2Icon className="h-6 w-6" />
                     </Menu.Button>
                   </div>
                   <Transition
