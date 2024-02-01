@@ -1,5 +1,4 @@
 import Scene from "@/components/Scene";
-import ShitzuToken from "@/components/ShitzuToken";
 import Image from "next/image";
 
 export default function Home() {
