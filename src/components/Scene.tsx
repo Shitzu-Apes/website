@@ -6,23 +6,13 @@ import { OrbitControls } from "@react-three/drei";
 
 export default function Scene() {
   return (
-    <Canvas
-      camera={{
-        position: [-3, 2.5, 1.5],
-        fov: 100,
-        near: 0.1,
-        far: 1000,
-      }}
-    >
+    <Canvas>
       <ShitzuToken />
       <ambientLight />
       {/* point light that points to the center of the scene from bottom left */}
       <pointLight position={[-2, -2, 1]} intensity={50} />
       {/* point light that points to the center of the scene from bottom right */}
       <pointLight position={[2, 2, 1]} intensity={50} />
-      {/* <axesHelper /> */}
-
-      <gridHelper args={[50, 50]} />
     </Canvas>
   );
 }
