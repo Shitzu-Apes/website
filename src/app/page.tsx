@@ -23,9 +23,9 @@ export default function Home() {
             centralized dev team—just a 100% community-owned and driven
             initiative.
           </div>
-          <div className="mr-auto flex flex-col justify-stretch items-stretch text-lg mt-16">
+          <div className="mr-auto flex flex-col justify-stretch items-stretch text-lg mt-16 w-full md:w-auto">
             <span className="text-xl">Find us on</span>
-            <div className="mt-3">
+            <div className="mt-3 w-full md:w-auto">
               <ChainTab />
             </div>
           </div>

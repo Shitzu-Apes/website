@@ -8,10 +8,10 @@ import { InformationCircleIcon } from "@heroicons/react/24/outline";
 export default function ChainTab() {
   return (
     <Tab.Group>
-      <Tab.List className={"flex mb-5"}>
+      <Tab.List className={"flex mb-5 w-full md:w-auto"}>
         <Tab
           className={({ selected }) =>
-            `flex items-center border-2 border-r-0 px-3 py-1 rounded-l-md ${
+            `flex items-center border-2 border-r-0 px-3 py-1 rounded-l-md w-1/2 md:w-auto ${
               selected ? "bg-white text-primary" : ""
             }`
           }
@@ -25,7 +25,7 @@ export default function ChainTab() {
         </Tab>
         <Tab
           className={({ selected }) =>
-            `flex items-center border-2 px-3 py-1 rounded-r-md ${
+            `flex items-center border-2 px-3 py-1 rounded-r-md w-1/2 md:w-auto ${
               selected ? "bg-white text-primary" : ""
             }`
           }
@@ -44,9 +44,9 @@ export default function ChainTab() {
             <Clipboard value="0x68e401b61ea53889505cc1366710f733a60c2d41" />
           </div>
 
-          <div className="flex items-center mb-4 gap-3">
+          <div className="flex flex-col md:flex-row items-stretch md:items-center mb-4 gap-3">
             <a
-              className="w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
+              className="w-full md:w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
               href="https://near.org/marior.near/widget/ShitzuMigrate"
               target="_blank"
               rel="noreferrer"
@@ -60,7 +60,7 @@ export default function ChainTab() {
               Trisolaris
             </a>
             <a
-              className="w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
+              className="w-full md:w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
               href="https://near.org/marior.near/widget/ShitzuMigrate"
               target="_blank"
               rel="noreferrer"
@@ -87,13 +87,13 @@ export default function ChainTab() {
             </a>
           </div>
         </Tab.Panel>
-        <Tab.Panel>
+        <Tab.Panel className={"w-full md:w-auto"}>
           <div className="mb-4">
             <Clipboard value="token.0xshitzu.near" />
           </div>
-          <div className="flex items-center mb-4 gap-3">
+          <div className="flex flex-col md:flex-row items-stretch md:items-center mb-4 gap-3">
             <a
-              className="w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
+              className="w-full md:w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
               href="https://near.org/marior.near/widget/ShitzuMigrate"
               target="_blank"
               rel="noreferrer"
@@ -107,7 +107,7 @@ export default function ChainTab() {
               Ref Finance
             </a>
             <a
-              className="w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
+              className="w-full md:w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
               href="https://dexscreener.com/near/refv1-4369"
               target="_blank"
               rel="noreferrer"
