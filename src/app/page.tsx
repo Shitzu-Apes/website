@@ -5,12 +5,12 @@ import Scene from "@/components/Scene";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="relative flex place-items-center h-[100vh] min-h-[100vh] w-full min-w-[100vh]">
-        <div className="w-3/5 h-full text-7xl font-bold text-white px-10 flex flex-col items-center justify-center">
+      <div className="relative flex flex-col-reverse md:flex-row place-items-center h-[100vh] min-h-[100vh] w-full px-3 md:px-0">
+        <div className="w-full md:w-3/5 h-full text-4xl md:text-7xl font-bold text-white md:px-10 flex flex-col items-center justify-center">
           <div className="w-full">
             WE ARE <span className="text-primary">SHITZURIAN</span>
           </div>
-          <div className="text-lg font-light text-pretty text-justify text-white mt-5">
+          <div className="text-sm md:text-lg font-light text-justify text-white mt-5">
             Unparalleled in its design,{" "}
             <span className="text-primary font-bold">$SHITZU</span> sets itself
             apart as a meme token like no other. With a 24-hour free and fair
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <button></button>
         </div>
-        <div className="w-2/5 h-full">
+        <div className="w-full md:w-2/5 h-full">
           <Scene />
         </div>
       </div>

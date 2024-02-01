@@ -4,13 +4,13 @@ import React from "react";
 
 export default function Clipboard({ value }: { value: string }) {
   const [copied, setCopied] = React.useState(false);
+  console.log({ value, length: value.length });
 
   return (
-    <div className="w-full">
+    <div className="max-w-full">
       <button
         type="button"
         className="w-full relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary"
-        // border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
         data-clipboard-target="#hs-clipboard-tooltip-on-hover"
         data-clipboard-action="copy"
         data-clipboard-success-text="Copied"
@@ -27,7 +27,9 @@ export default function Clipboard({ value }: { value: string }) {
           }, 2000);
         }}
       >
-        {value}
+        {innerWidth > 768 && value.length < 15
+          ? value
+          : `${value.slice(0, 8)}...${value.slice(-8)}`}
         <span className="border-s ps-3.5 dark:border-gray-700 ml-auto">
           {!copied ? (
             <svg

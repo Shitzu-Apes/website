@@ -1,11 +1,9 @@
 "use client";
 
 import { Tab } from "@headlessui/react";
-import Clipboard from "./Clipboard";
-import {
-  InformationCircleIcon,
-  PresentationChartLineIcon,
-} from "@heroicons/react/24/outline";
+import Clipboard from "@/components/Clipboard";
+
+import { InformationCircleIcon } from "@heroicons/react/24/outline";
 
 export default function ChainTab() {
   return (
