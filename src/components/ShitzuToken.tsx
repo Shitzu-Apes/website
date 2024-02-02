@@ -34,7 +34,7 @@ export default function ShitzuToken() {
       scale={innerWidth < 768 ? [2, 2, 2] : [1.5, 1.5, 1.5]}
     >
       <group position={[-1, 0.1, 1]} rotation={[Math.PI / 2, 0, 0]}>
-        <Circle args={[1, 32]} position={[1, -1, 0.001]}>
+        <Circle args={[1, 256]} position={[1, -1, 0.001]}>
           <meshStandardMaterial color={new Color("black")} side={BackSide} />
         </Circle>
         <mesh
@@ -47,12 +47,12 @@ export default function ShitzuToken() {
       </group>
 
       <mesh>
-        <cylinderGeometry args={[1, 1, 0.2, 32, 32, true]} />
+        <cylinderGeometry args={[1, 1, 0.2, 256, 256, true]} />
         <meshStandardMaterial color={new Color("#31c891")} />
       </mesh>
 
       <group position={[-1, -0.1, 1]} rotation={[Math.PI / 2, 0, 0]}>
-        <Circle args={[1, 32]} position={[1, -1, -0.001]}>
+        <Circle args={[1, 256]} position={[1, -1, -0.001]}>
           <meshStandardMaterial color={new Color("#31c891")} side={FrontSide} />
         </Circle>
         <mesh
