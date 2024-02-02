@@ -59,7 +59,6 @@ export default function Navbar() {
                     src={ShitzuLogo.src}
                     alt="Shitzu Logo"
                   />
-                  SHITZU
                 </Link>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -82,7 +81,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <div className="flex space-x-4">
+                <div className="hidden sm:flex space-x-4">
                   <a
                     href={"https://twitter.com/shitzucommunity"}
                     className={classNames(
@@ -93,7 +92,7 @@ export default function Navbar() {
                     <TwitterIcon className="h-6 w-6 text-primary" />
                   </a>
                   <a
-                    href={"https://twitter.com/shitzucommunity"}
+                    href={"https://t.me/Shitzu_Community"}
                     className={classNames(
                       "rounded-md py-2 text-sm font-medium"
                     )}
@@ -114,7 +113,7 @@ export default function Navbar() {
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-5">
                   <div>
-                    <Menu.Button className="relative flex rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 items-center text-primary">
+                    <Menu.Button className="relative flex text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 items-center text-primary">
                       <Squares2X2Icon className="h-6 w-6" />
                     </Menu.Button>
                   </div>
@@ -128,74 +127,50 @@ export default function Navbar() {
                     leaveTo="transform opacity-0 scale-95"
                   >
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="https://www.trisolaris.io/#/swap?outputCurrency=0x68e401B61eA53889505cc1366710f733A60C2d41"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "flex px-4 py-2 text-sm text-gray-700"
-                            )}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            BUY on{" "}
-                            <img
-                              className="mx-2 h-4 w-auto rounded-full"
-                              src={TrisolarisLogo.src}
-                              alt="Ref Finance Logo"
-                            />{" "}
-                            Trisolaris
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="https://app.ref.finance/#near|token.0xshitzu.near"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "flex items-center px-4 py-2 text-sm text-gray-700"
-                            )}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            BUY on{" "}
-                            <img
-                              className="h-6 w-auto rounded-full mx-2"
-                              src={RefFinanceLogo.src}
-                              alt="Ref Finance Logo"
-                            />
-                            Ref
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="https://near.org/marior.near/widget/ShitzuMigrate"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "flex items-center px-4 py-2 text-sm text-gray-700"
-                            )}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            Migrate{" "}
-                            <img
-                              src={AuroraLogo.src}
-                              alt="Aurora Logo"
-                              className="h-6 mx-2 w-auto rounded-full"
-                            />
-                            →
-                            <img
-                              src={NearLogo.src}
-                              alt="near Logo"
-                              className="h-6 mx-2 w-auto rounded-full"
-                            />
-                          </a>
-                        )}
-                      </Menu.Item>
+                      <MenuItem href="https://www.trisolaris.io/#/swap?outputCurrency=0x68e401B61eA53889505cc1366710f733A60C2d41">
+                        BUY on{" "}
+                        <img
+                          className="mx-2 h-4 w-auto rounded-full"
+                          src={TrisolarisLogo.src}
+                          alt="Ref Finance Logo"
+                        />{" "}
+                        Trisolaris
+                      </MenuItem>
+                      <MenuItem href="https://app.ref.finance/#near|token.0xshitzu.near">
+                        BUY on{" "}
+                        <img
+                          className="h-6 w-auto rounded-full mx-2"
+                          src={RefFinanceLogo.src}
+                          alt="Ref Finance Logo"
+                        />
+                        Ref
+                      </MenuItem>
+                      <MenuItem href="https://near.org/marior.near/widget/ShitzuMigrate">
+                        Migrate{" "}
+                        <img
+                          src={AuroraLogo.src}
+                          alt="Aurora Logo"
+                          className="h-6 mx-2 w-auto rounded-full"
+                        />
+                        →
+                        <img
+                          src={NearLogo.src}
+                          alt="near Logo"
+                          className="h-6 mx-2 w-auto rounded-full"
+                        />
+                      </MenuItem>
+                      <MenuItem href="https://twitter.com/shitzucommunity">
+                        <TwitterIcon className="h-6 w-6 mr-2 text-[#1da1f2]" />
+                        <span>Twitter</span>
+                      </MenuItem>
+                      <MenuItem href="https://t.me/Shitzu_Community">
+                        <TelegramIcon className="h-6 w-6 mr-2 text-[#2AABEE]" />
+                        <span>Telegram</span>
+                      </MenuItem>
+                      <MenuItem href="https://github.com/Shitzu-Apes">
+                        <GithubIcon className="h-6 w-6 mr-2 text-[#24292e]" />
+                        <span>Github</span>
+                      </MenuItem>
                     </Menu.Items>
                   </Transition>
                 </Menu>
@@ -226,5 +201,31 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
+  );
+}
+
+function MenuItem({
+  children,
+  href,
+}: {
+  children: React.ReactNode;
+  href?: string;
+}) {
+  return (
+    <Menu.Item>
+      {({ active }) => (
+        <a
+          href={href}
+          className={classNames(
+            active ? "bg-gray-100" : "",
+            "flex px-4 py-2 text-sm text-gray-700"
+          )}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {children}
+        </a>
+      )}
+    </Menu.Item>
   );
 }

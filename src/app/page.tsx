@@ -1,5 +1,4 @@
 import ChainTab from "@/components/ChainTab";
-import Clipboard from "@/components/Clipboard";
 import Scene from "@/components/Scene";
 
 export default function Home() {
