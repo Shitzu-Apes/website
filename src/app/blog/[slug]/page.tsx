@@ -14,10 +14,10 @@ export default async function BlogPage({
   const post = readFileSync(`./blogs/${slug}/readme.md`, "utf-8");
 
   return (
-    <div>
+    <div className="bg-primary-light px-6 py-32 lg:px-8 w-full min-h-[100vh]">
       <Markdown
         remarkPlugins={[remarkGfm, remarkFrontmatter]}
-        className={"prose prose-slate dark:prose-invert mx-auto mt-10"}
+        className={"prose-dark prose mx-auto"}
         components={{
           img: ({ node, ...props }) => {
             readFileSync(`./blogs/${slug}/${props.src}`, "utf-8");

@@ -1,5 +1,4 @@
 import ChainTab from "@/components/ChainTab";
-import Footer from "@/components/Footer";
 import LandingBlog from "@/components/LandingBlog";
 import Scene from "@/components/Scene";
 import { BlogMetadata } from "@/utils/blog";

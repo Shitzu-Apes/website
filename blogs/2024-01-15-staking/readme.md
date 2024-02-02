@@ -2,7 +2,7 @@
 date: 2024-01-15
 title: Staking on Ref Finance
 description: Ref Finance launch meme staking
-author: Shitzu
+author: Alice
 tags: [staking, ref-finance]
 ---
 

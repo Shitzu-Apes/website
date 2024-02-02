@@ -2,7 +2,7 @@
 date: 2022-04-01
 title: Introducing Shitzu
 description: Introducing Shitzu
-author: Shitzu
+author: Charlie
 tags: [introduction, shitzu]
 ---
 
