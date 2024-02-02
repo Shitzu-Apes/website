@@ -1,23 +1,27 @@
 import ChainTab from "@/components/ChainTab";
 import LandingBlog from "@/components/LandingBlog";
 import Scene from "@/components/Scene";
+import { BlogMetadata } from "@/utils/blog";
 import { readFrontmatter } from "@/utils/markdown";
 import { readdirSync } from "fs";
 
 export default async function Home() {
   let files = readdirSync("./blogs", { withFileTypes: true });
 
-  // Sort posts by date (newest first) name is in format YYYY-MM-DD-title.mdx
-  // So, sorting by name will sort by date
   files.sort((a, b) => {
     return b.name.localeCompare(a.name);
   });
   files = files.slice(0, 3);
 
-  const frontmatters = [];
+  const blogmetadata = [];
   for await (const file of files) {
-    const frontmatter = readFrontmatter(`./blogs/${file.name}/readme.md`);
-    frontmatters.push(frontmatter);
+    const frontmatter = await readFrontmatter(`./blogs/${file.name}/readme.md`);
+
+    const metadata = BlogMetadata.parse({
+      ...(frontmatter.data.matter as Object),
+      slug: file.name,
+    });
+    blogmetadata.push(metadata);
   }
 
   return (
@@ -53,7 +57,7 @@ export default async function Home() {
         </div>
       </div>
       <div className="w-full">
-        <LandingBlog />
+        <LandingBlog blogs={blogmetadata} />
       </div>
     </main>
   );
