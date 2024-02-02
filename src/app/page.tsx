@@ -60,9 +60,6 @@ export default async function Home() {
       <div className="w-full">
         <LandingBlog blogs={blogmetadata} />
       </div>
-      <div className="w-full">
-        <Footer />
-      </div>
     </main>
   );
 }
