@@ -1,10 +1,7 @@
 import { readdirSync } from "fs";
 
-import { RandomAvatar } from "react-random-avatars";
-
 import { BlogMetadata } from "@/utils/blog";
 import { readFrontmatter } from "@/utils/markdown";
-import Avatar from "@/components/Avatar";
 import Link from "next/link";
 
 export default async function BlogPage() {

@@ -1,6 +1,5 @@
 import { TBlogMetadata } from "@/utils/blog";
 import Link from "next/link";
-import Avatar from "./Avatar";
 
 export default function LandingBlog({ blogs }: { blogs: TBlogMetadata[] }) {
   return (
