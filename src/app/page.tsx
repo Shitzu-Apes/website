@@ -1,4 +1,5 @@
 import ChainTab from "@/components/ChainTab";
+import Footer from "@/components/Footer";
 import LandingBlog from "@/components/LandingBlog";
 import Scene from "@/components/Scene";
 import { BlogMetadata } from "@/utils/blog";
@@ -58,6 +59,9 @@ export default async function Home() {
       </div>
       <div className="w-full">
         <LandingBlog blogs={blogmetadata} />
+      </div>
+      <div className="w-full">
+        <Footer />
       </div>
     </main>
   );
