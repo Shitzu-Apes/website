@@ -4,6 +4,13 @@ import { Tab } from "@headlessui/react";
 import Clipboard from "@/components/Clipboard";
 
 import { InformationCircleIcon } from "@heroicons/react/24/outline";
+import {
+  AuroraLogo,
+  DexScreenerLogo,
+  NearLogo,
+  RefFinanceLogo,
+  TrisolarisLogo,
+} from "./Icons";
 
 export default function ChainTab() {
   return (
@@ -17,7 +24,7 @@ export default function ChainTab() {
           }
         >
           <img
-            src="/aurora.png"
+            src={AuroraLogo.src}
             alt="Ethereum"
             className="w-5 h-5 mr-2 rounded-full"
           />
@@ -31,7 +38,7 @@ export default function ChainTab() {
           }
         >
           <img
-            src="/near.png"
+            src={NearLogo.src}
             alt="Ethereum"
             className="w-5 h-5 mr-2 rounded-full"
           />
@@ -53,7 +60,7 @@ export default function ChainTab() {
             >
               BUY on
               <img
-                src="/trisolaris.png"
+                src={TrisolarisLogo.src}
                 alt="Trisolaris Logo"
                 className="h-6 mx-2 w-auto rounded-full"
               />
@@ -67,13 +74,13 @@ export default function ChainTab() {
             >
               Migrate
               <img
-                src="/aurora.png"
+                src={AuroraLogo.src}
                 alt="Aurora Logo"
                 className="h-6 mx-2 w-auto rounded-full"
               />
               →
               <img
-                src="/near.png"
+                src={NearLogo.src}
                 alt="near Logo"
                 className="h-6 mx-1 w-auto rounded-full"
               />
@@ -100,7 +107,7 @@ export default function ChainTab() {
             >
               BUY on
               <img
-                src="/ref.png"
+                src={RefFinanceLogo.src}
                 alt="Ref Finance Logo"
                 className="h-6 mx-1 w-auto rounded-full"
               />
@@ -113,7 +120,7 @@ export default function ChainTab() {
               rel="noreferrer"
             >
               <img
-                src="/dexscreener.png"
+                src={DexScreenerLogo.src}
                 alt="Dexscreener Logo"
                 className="h-6 mx-1 w-auto rounded-full"
               />

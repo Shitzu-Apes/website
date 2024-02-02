@@ -7,7 +7,17 @@ import {
   Squares2X2Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { GithubIcon, TelegramIcon, TwitterIcon } from "./Icons";
+import {
+  AuroraLogo,
+  GithubIcon,
+  NearLogo,
+  RefFinanceLogo,
+  ShitzuLogo,
+  TelegramIcon,
+  TrisolarisLogo,
+  TwitterIcon,
+} from "@/components/Icons";
+import Link from "next/link";
 
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
@@ -40,14 +50,17 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center text-white">
+                <Link
+                  href={"/"}
+                  className="flex flex-shrink-0 items-center text-white"
+                >
                   <img
                     className="h-8 w-auto mr-2"
-                    src="/shitzu.svg"
+                    src={ShitzuLogo.src}
                     alt="Shitzu Logo"
                   />
                   SHITZU
-                </div>
+                </Link>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -129,7 +142,7 @@ export default function Navbar() {
                             BUY on{" "}
                             <img
                               className="mx-2 h-4 w-auto rounded-full"
-                              src="/trisolaris.png"
+                              src={TrisolarisLogo.src}
                               alt="Ref Finance Logo"
                             />{" "}
                             Trisolaris
@@ -150,7 +163,7 @@ export default function Navbar() {
                             BUY on{" "}
                             <img
                               className="h-6 w-auto rounded-full mx-2"
-                              src="/ref.png"
+                              src={RefFinanceLogo.src}
                               alt="Ref Finance Logo"
                             />
                             Ref
@@ -170,13 +183,13 @@ export default function Navbar() {
                           >
                             Migrate{" "}
                             <img
-                              src="/aurora.png"
+                              src={AuroraLogo.src}
                               alt="Aurora Logo"
                               className="h-6 mx-2 w-auto rounded-full"
                             />
                             →
                             <img
-                              src="/near.png"
+                              src={NearLogo.src}
                               alt="near Logo"
                               className="h-6 mx-2 w-auto rounded-full"
                             />

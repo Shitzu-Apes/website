@@ -1,17 +1,20 @@
 "use client";
 
-import { Circle, Svg, Text, Text3D } from "@react-three/drei";
+import { Circle } from "@react-three/drei";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
 import { BackSide, Color, FrontSide, Group, ShapeGeometry } from "three";
 import { SVGLoader } from "three/examples/jsm/Addons.js";
 
+import ShitzuWireframe from "@/assets/shitzu-wireframe.svg";
+
 export default function ShitzuToken() {
   const ref = useRef<Group>(null);
 
+  console.log(ShitzuWireframe);
   const {
     paths: [path],
-  } = useLoader(SVGLoader, "/shitzu-wireframe.svg");
+  } = useLoader(SVGLoader, ShitzuWireframe.src as string);
 
   const geometry = useMemo(() => {
     return new ShapeGeometry(path.toShapes(true));

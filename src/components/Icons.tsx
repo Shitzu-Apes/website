@@ -48,3 +48,10 @@ export function GithubIcon({ className }: { className?: string }) {
     </svg>
   );
 }
+
+export { default as ShitzuLogo } from "@/assets/shitzu.svg";
+export { default as DexScreenerLogo } from "@/assets/dexscreener.png";
+export { default as NearLogo } from "@/assets/near.png";
+export { default as AuroraLogo } from "@/assets/aurora.png";
+export { default as RefFinanceLogo } from "@/assets/ref.png";
+export { default as TrisolarisLogo } from "@/assets/trisolaris.png";
