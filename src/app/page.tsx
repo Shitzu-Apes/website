@@ -64,7 +64,7 @@ export default async function Home() {
       <div className="w-full">
         <LandingBlog blogs={blogmetadata} />
       </div>
-      <div className="w-full">
+      <div id="FAQ" className="w-full">
         <FAQ />
       </div>
     </main>

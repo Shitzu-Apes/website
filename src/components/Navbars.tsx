@@ -19,7 +19,10 @@ import {
 } from "@/components/Icons";
 import Link from "next/link";
 
-const navigation = [{ name: "Blog", href: "/blog", current: true }];
+const navigation = [
+  { name: "Blog", href: "/blog", current: false },
+  { name: "FAQ", href: "/#FAQ", current: false },
+];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -178,7 +181,7 @@ export default function Navbar() {
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as="a"
+                  as={Link}
                   href={item.href}
                   className={classNames(
                     item.current
