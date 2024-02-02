@@ -1,6 +1,6 @@
 ---
 date: 2024-01-15
-title: SHITZU Staking Frenzy - Ref Meme Season Is Here!
+title: Ref Meme Season Is Here!
 description: Join the SHITZU staking revolution during Ref Meme Season! Stake your $SHITZU in the first 6 days to maximize your rewards for the next 14 days. With a total pool of 125K $REF & 8333 $NEAR monthly, your early participation sets the meme gauge weight for rewards distribution.
 author: Alice
 tags: [staking, ref-finance]

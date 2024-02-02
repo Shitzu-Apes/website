@@ -39,7 +39,6 @@ export default function LandingBlog({ blogs }: { blogs: TBlogMetadata[] }) {
                   {blog.description}
                 </p>
               </div>
-              <Avatar name={blog.author} />
             </article>
           ))}
         </div>

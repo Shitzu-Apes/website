@@ -61,7 +61,6 @@ export default async function BlogPage() {
                     {blog.description}
                   </p>
                 </div>
-                <Avatar name={blog.author} />
               </Link>
             ))}
           </div>
