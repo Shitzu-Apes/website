@@ -124,7 +124,7 @@ export default function Navbar() {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                   >
-                    <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-black py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <MenuItem href="https://www.trisolaris.io/#/swap?outputCurrency=0x68e401B61eA53889505cc1366710f733A60C2d41">
                         BUY on{" "}
                         <img
@@ -166,7 +166,7 @@ export default function Navbar() {
                         <span>Telegram</span>
                       </MenuItem>
                       <MenuItem href="https://github.com/Shitzu-Apes">
-                        <GithubIcon className="h-6 w-6 mr-2 text-[#24292e]" />
+                        <GithubIcon className="h-6 w-6 mr-2 text-white" />
                         <span>Github</span>
                       </MenuItem>
                     </Menu.Items>
@@ -215,8 +215,8 @@ function MenuItem({
         <a
           href={href}
           className={classNames(
-            active ? "bg-gray-100" : "",
-            "flex px-4 py-2 text-sm text-gray-700"
+            active ? "bg-gray-700" : "",
+            "flex items-center px-4 py-2 text-sm text-gray-200"
           )}
           target="_blank"
           rel="noreferrer"
