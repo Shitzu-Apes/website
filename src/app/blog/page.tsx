@@ -5,6 +5,7 @@ import { RandomAvatar } from "react-random-avatars";
 import { BlogMetadata } from "@/utils/blog";
 import { readFrontmatter } from "@/utils/markdown";
 import Avatar from "@/components/Avatar";
+import Link from "next/link";
 
 export default async function BlogPage() {
   let files = readdirSync("./blogs", { withFileTypes: true });
@@ -37,7 +38,7 @@ export default async function BlogPage() {
           </p>
           <div className="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
             {blogs.map((blog) => (
-              <a
+              <Link
                 href={`/blog/${blog.slug}`}
                 key={blog.title}
                 className="flex max-w-xl flex-col items-start justify-between"
@@ -62,7 +63,7 @@ export default async function BlogPage() {
                   </p>
                 </div>
                 <Avatar name={blog.author} />
-              </a>
+              </Link>
             ))}
           </div>
         </div>
