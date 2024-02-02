@@ -13,7 +13,6 @@ export default async function BlogPage() {
   files.sort((a, b) => {
     return b.name.localeCompare(a.name);
   });
-  files = files.slice(0, 3);
 
   const blogs = [];
   for await (const file of files) {
