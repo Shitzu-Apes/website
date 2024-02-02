@@ -28,7 +28,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-sm leading-5 inline-flex items-center text-gray-300">
+          <p className="text-center text-sm leading-5 text-gray-300">
             &copy; Shitzu Community
           </p>
         </div>

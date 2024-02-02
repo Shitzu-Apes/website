@@ -28,7 +28,7 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="relative flex flex-col-reverse md:flex-row place-items-center h-[100vh] min-h-[100vh] w-full px-3 md:px-0">
+      <div className="relative flex flex-col-reverse md:flex-row place-items-center min-h-[100vh] w-full px-3 md:px-0">
         <div className="w-full md:w-3/5 h-full text-4xl md:text-8xl font-bold text-white md:px-10 flex flex-col items-center justify-center">
           <div className="w-full">
             UNITE <span className="text-primary">SHITZU</span> Apes
@@ -55,7 +55,7 @@ export default async function Home() {
           </div>
           <button></button>
         </div>
-        <div className="w-full md:w-2/5 h-full">
+        <div className="w-full md:w-2/5 h-[450px] md:min-h-[100vh]">
           <Scene />
         </div>
       </div>
