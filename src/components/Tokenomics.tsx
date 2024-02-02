@@ -9,8 +9,11 @@ export default function Tokenomics() {
           576,167,000
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-          Shitzu is simplicity, there will only ever be 576,167,000 tokens
-          period.
+          Being born on April Fool's,{" "}
+          <span className="text-primary text-bold">$SHITZU</span> keeps it
+          foolishly simple:
+          <span className="text-primary text-bold"> 576,167,000</span> tokens,
+          period. All circulating, no lock-ups, no vesting.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
