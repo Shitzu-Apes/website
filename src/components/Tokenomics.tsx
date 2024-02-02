@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CoingeckoLogo } from "./Icons";
 
 export default function Tokenomics() {
   return (
@@ -8,20 +9,22 @@ export default function Tokenomics() {
           576,167,000
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-          Shitzu is simplicity, there will only be 576,167,000 tokens period.
+          Shitzu is simplicity, there will only ever be 576,167,000 tokens
+          period.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
-            href="https://app.ref.finance/#near|token.0xshitzu.near"
-            className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            href="https://www.coingecko.com/en/coins/shitzu"
+            className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white inline-flex items-center"
             target="_blank"
             rel="noreferrer"
           >
-            BUY NOW
+            <img src={CoingeckoLogo.src} className="h-5 w-5 mr-2" />
+            Coingecko
           </a>
           <Link
             href="/blog"
-            className="text-sm font-semibold leading-6 text-white"
+            className="text-sm font-semibold leading-6 text-white inline-flex items-center"
           >
             Learn more <span aria-hidden="true">→</span>
           </Link>
