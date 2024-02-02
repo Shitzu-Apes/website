@@ -2,7 +2,7 @@
 const nextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx"],
   output: "export",
-  basePath: process.env.NODE_ENV === "production" ? "/shitzu-website" : "",
+  basePath: process.env.BASEPATH,
 };
 
 export default nextConfig;
