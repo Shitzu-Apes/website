@@ -27,7 +27,12 @@ export default function ShitzuToken() {
   });
 
   return (
-    <group ref={ref} rotation={[Math.PI / 2, Math.PI, 0]} position={[0, 0, 0]}>
+    <group
+      ref={ref}
+      rotation={[Math.PI / 2, Math.PI, 0]}
+      position={[0, 0, 0]}
+      scale={innerWidth < 768 ? [2, 2, 2] : [1.5, 1.5, 1.5]}
+    >
       <group position={[-1, 0.1, 1]} rotation={[Math.PI / 2, 0, 0]}>
         <Circle args={[1, 32]} position={[1, -1, 0.001]}>
           <meshStandardMaterial color={new Color("black")} side={BackSide} />
