@@ -1,4 +1,5 @@
 import ChainTab from "@/components/ChainTab";
+import FAQ from "@/components/FAQ";
 import LandingBlog from "@/components/LandingBlog";
 import Scene from "@/components/Scene";
 import Tokenomics from "@/components/Tokenomics";
@@ -62,6 +63,9 @@ export default async function Home() {
       </div>
       <div className="w-full">
         <LandingBlog blogs={blogmetadata} />
+      </div>
+      <div className="w-full">
+        <FAQ />
       </div>
     </main>
   );
