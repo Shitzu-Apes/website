@@ -1,7 +1,25 @@
 import ChainTab from "@/components/ChainTab";
+import LandingBlog from "@/components/LandingBlog";
 import Scene from "@/components/Scene";
+import { readFrontmatter } from "@/utils/markdown";
+import { readdirSync } from "fs";
 
-export default function Home() {
+export default async function Home() {
+  let files = readdirSync("./blogs", { withFileTypes: true });
+
+  // Sort posts by date (newest first) name is in format YYYY-MM-DD-title.mdx
+  // So, sorting by name will sort by date
+  files.sort((a, b) => {
+    return b.name.localeCompare(a.name);
+  });
+  files = files.slice(0, 3);
+
+  const frontmatters = [];
+  for await (const file of files) {
+    const frontmatter = readFrontmatter(`./blogs/${file.name}/readme.md`);
+    frontmatters.push(frontmatter);
+  }
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="relative flex flex-col-reverse md:flex-row place-items-center h-[100vh] min-h-[100vh] w-full px-3 md:px-0">
@@ -33,6 +51,9 @@ export default function Home() {
         <div className="w-full md:w-2/5 h-full">
           <Scene />
         </div>
+      </div>
+      <div className="w-full">
+        <LandingBlog />
       </div>
     </main>
   );
