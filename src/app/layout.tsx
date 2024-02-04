@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     url: "https://shitzuapes.xyz/",
     images: [
       {
-        url: "https://shitzu.finance/og.png",
-        width: 1200,
-        height: 630,
+        url: OGImage.src,
+        width: 1920,
+        height: 1080,
         alt: "SHITZU",
       },
     ],
