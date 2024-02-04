@@ -11,6 +11,7 @@ import {
   RefFinanceLogo,
   TrisolarisLogo,
 } from "./Icons";
+import Link from "next/link";
 
 export default function ChainTab() {
   return (
@@ -66,32 +67,34 @@ export default function ChainTab() {
               />
               Trisolaris
             </a>
-            <a
-              className="w-full md:w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
-              href="https://near.org/marior.near/widget/ShitzuMigrate"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Migrate
-              <img
-                src={AuroraLogo.src}
-                alt="Aurora Logo"
-                className="h-6 mx-2 w-auto rounded-full"
-              />
-              →
-              <img
-                src={NearLogo.src}
-                alt="near Logo"
-                className="h-6 mx-1 w-auto rounded-full"
-              />
-            </a>
-            <a
-              href="https://github.com/Shitzu-Apes/proposal"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <InformationCircleIcon className="h-8 text-primary" />
-            </a>
+            <div className="w-full md:w-fit flex items-center gap-2">
+              <a
+                href="https://near.org/marior.near/widget/ShitzuMigrate"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex justify-center relative py-3 px-4 items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
+              >
+                Migrate
+                <img
+                  src={AuroraLogo.src}
+                  alt="Aurora Logo"
+                  className="h-6 mx-2 w-auto rounded-full"
+                />
+                →
+                <img
+                  src={NearLogo.src}
+                  alt="near Logo"
+                  className="h-6 mx-1 w-auto rounded-full"
+                />
+              </a>
+              <Link
+                href="/blog/2024-01-01-migration"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <InformationCircleIcon className="h-8 text-primary" />
+              </Link>
+            </div>
           </div>
         </Tab.Panel>
         <Tab.Panel className={"w-full md:w-auto"}>
