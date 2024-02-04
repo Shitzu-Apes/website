@@ -6,9 +6,9 @@ author: Charlie
 tags: [introduction, shitzu]
 ---
 
-# Introducing Shitzu
-
 ![Shitzu](./thumbnail.JPG)
+
+# Introducing Shitzu
 
 In the quirky world of cryptocurrencies, the birth of Shitzu memecoin stands out as a testament to the power of community and the whimsy of digital innovation. This unique token sprung into existence from an April Fool's event that captured the imagination and fingers of crypto enthusiasts worldwide.
 

@@ -5,6 +5,7 @@ import remarkGfm from "remark-gfm";
 import remarkFrontmatter from "remark-frontmatter";
 import mdnameUtils from "@/utils/mdname";
 import mime from "mime";
+import Breadcrumbs from "@/components/BreadCrumbs";
 
 export default async function BlogPage({
   params: { slug },
@@ -15,6 +16,9 @@ export default async function BlogPage({
 
   return (
     <div className="bg-primary-light px-6 py-32 lg:px-8 w-full min-h-[100vh]">
+      <div className="w-[65ch] mx-auto mb-10">
+        <Breadcrumbs name={slug} href={slug} />
+      </div>
       <Markdown
         remarkPlugins={[remarkGfm, remarkFrontmatter]}
         className={"prose-dark prose mx-auto"}

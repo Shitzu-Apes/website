@@ -3,7 +3,7 @@ date: "2022-09-22"
 title: Crossword.xyz Partnership
 description: Shitzu partners with Crossword.xyz to create educational puzzles about NEAR and blockchain concepts in general.
 author: Shitzu
-tags: [crossword, partnership]
+tags: [partnership, crossword.xyz]
 ---
 
 ![crossword](./thumbnail.webp)
