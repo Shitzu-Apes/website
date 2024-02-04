@@ -11,7 +11,6 @@ import ShitzuWireframe from "@/assets/shitzu-wireframe.svg";
 export default function ShitzuToken() {
   const ref = useRef<Group>(null);
 
-  console.log(ShitzuWireframe);
   const {
     paths: [path],
   } = useLoader(SVGLoader, ShitzuWireframe.src as string);
