@@ -1,5 +1,12 @@
 # Shitzu Website
 
+## Set up Github Page
+
+Go to `Settings` > `Secrets and variables` > `Actions` > `Variables` > `New repository variable`
+
+1. `BASEPATH` e.g. `/website` or left blank
+2. `METADATABASE` e.g. `https://shitzuapes.xyz`
+
 ## Contributions
 
 ### Adding a new blog post

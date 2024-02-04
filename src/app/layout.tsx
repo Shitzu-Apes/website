@@ -13,6 +13,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.METADATABASE!),
   title: "SHITZU - 576,167,000",
   description:
     "Being born on April Fool's, $SHITZU keeps it foolishly simple: 576,167,000 tokens, period. All circulating, no lock-ups, no vesting.",

@@ -23,6 +23,7 @@ jobs:
           path: ./out
     env:
       BASEPATH: ${{ vars.BASEPATH }}
+      METADATABASE: ${{ vars.METADATABASE }}
 
   deploy:
     needs: build
