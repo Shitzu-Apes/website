@@ -72,7 +72,7 @@ export default function ChainTab() {
                 href="https://near.org/marior.near/widget/ShitzuMigrate"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex justify-center relative py-3 px-4 items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
+                className="inline-flex justify-center flex-1 relative py-3 px-4 items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
               >
                 Migrate
                 <img
