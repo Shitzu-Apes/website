@@ -33,7 +33,7 @@ export default async function Home() {
           <div className="w-full">
             UNITE <span className="text-primary">SHITZU</span> Apes
           </div>
-          <div className="text-sm md:text-lg font-light text-justify text-white mt-5 leading-8 md:leading-8">
+          <div className="text-base md:text-lg font-light text-justify text-white mt-5 leading-relaxed">
             Unparalleled in its design,{" "}
             <span className="text-primary font-bold">$SHITZU</span> sets itself
             apart as a meme token like no other. With a 24-hour free and fair
