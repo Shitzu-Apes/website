@@ -15,8 +15,8 @@ export default async function BlogPage({
   const post = readFileSync(`./blogs/${slug}/readme.md`, "utf-8");
 
   return (
-    <div className="bg-primary-light px-6 py-32 lg:px-8 w-full min-h-[100vh]">
-      <div className="w-[65ch] mx-auto mb-10">
+    <div className="bg-primary-light px-6 py-10 md:py-32 lg:px-8 w-full min-h-[100vh]">
+      <div className="max-w-[65ch] mx-auto mb-10">
         <Breadcrumbs name={slug} href={slug} />
       </div>
       <Markdown
