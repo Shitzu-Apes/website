@@ -6,7 +6,7 @@ author: Bob
 tags: [migration, shitzu]
 ---
 
-![Shitzu BG](./thumbnail.png)
+![Shitzu BG](./thumbnail.webp)
 
 # The Great Migration
 
