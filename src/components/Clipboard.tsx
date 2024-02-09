@@ -6,7 +6,7 @@ export default function Clipboard({ value }: { value: string }) {
   const [copied, setCopied] = React.useState(false);
 
   return (
-    <div className="max-w-full">
+    <div className="w-full">
       <button
         type="button"
         className="w-full relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary text-ellipsis"
