@@ -9,6 +9,7 @@ import FavIcon from "@/assets/favicon.ico";
 import OGImage from "@/assets/og.webp";
 
 import "./globals.css";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -67,6 +68,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script defer data-domain="shitzuapes.xyz" src="https://plausible.io/js/script.js"></script>
+      </head>
       <body className={`${inter.className} bg-black`}>
         <Navbar />
         <Banner />
