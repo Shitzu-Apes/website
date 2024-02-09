@@ -17,6 +17,17 @@ export const metadata: Metadata = {
   title: "SHITZU - 576,167,000",
   description:
     "Being born on April Fool's, $SHITZU keeps it foolishly simple: 576,167,000 tokens, period. All circulating, no lock-ups, no vesting.",
+  keywords: [
+    "crypto",
+    "web3",
+    "blockchain",
+    "meme",
+    "token",
+    "coin",
+    "erc-20",
+    "near",
+    "aurora"
+  ],
   icons: {
     icon: FavIcon.src,
   },
