@@ -125,7 +125,7 @@ export default function Navbar() {
                     leaveTo="transform opacity-0 scale-95"
                   >
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-black py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <MenuItem href="https://www.trisolaris.io/#/swap?outputCurrency=0x68e401B61eA53889505cc1366710f733A60C2d41">
+                      <MenuItem href="https://www.trisolaris.io/#/swap?outputCurrency=0xB12BFcA5A55806AaF64E99521918A4bf0fC40802&inputCurrency=0x68e401B61eA53889505cc1366710f733A60C2d41">
                         BUY on{" "}
                         <img
                           className="mx-2 h-4 w-auto rounded-full"
@@ -134,7 +134,7 @@ export default function Navbar() {
                         />{" "}
                         Trisolaris
                       </MenuItem>
-                      <MenuItem href="https://app.ref.finance/#near|token.0xshitzu.near">
+                      <MenuItem href="https://app.ref.finance/#token.0xshitzu.near|near">
                         BUY on{" "}
                         <img
                           className="h-6 w-auto rounded-full mx-2"

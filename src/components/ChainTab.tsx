@@ -68,7 +68,7 @@ export default function ChainTab() {
           <div className="flex flex-col md:flex-row items-stretch md:items-center mb-4 gap-3">
             <a
               className="w-full md:w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
-              href="https://near.org/marior.near/widget/ShitzuMigrate"
+              href="https://app.ref.finance/#token.0xshitzu.near|near"
               target="_blank"
               rel="noreferrer"
             >
@@ -103,7 +103,7 @@ export default function ChainTab() {
           <div className="flex flex-col md:flex-row items-stretch md:items-center mb-4 gap-3">
             <a
               className="w-full md:w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
-              href="https://near.org/marior.near/widget/ShitzuMigrate"
+              href="https://www.trisolaris.io/#/swap?outputCurrency=0xB12BFcA5A55806AaF64E99521918A4bf0fC40802&inputCurrency=0x68e401B61eA53889505cc1366710f733A60C2d41"
               target="_blank"
               rel="noreferrer"
             >
