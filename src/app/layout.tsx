@@ -70,6 +70,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script defer data-domain="shitzuapes.xyz" src="https://plausible.io/js/script.js"></script>
+        <meta name="google-site-verification" content="FmRJiRE0VYmRc-BJ9CQL1B6r8TCiDv7ouhGRah7AfKc" />
       </head>
       <body className={`${inter.className} bg-black`}>
         <Navbar />
