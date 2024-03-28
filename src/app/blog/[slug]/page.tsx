@@ -7,6 +7,7 @@ import mdnameUtils from "@/utils/mdname";
 import mime from "mime";
 import Breadcrumbs from "@/components/BreadCrumbs";
 import { Metadata, ResolvingMetadata } from "next";
+import toDataURL from "@/utils/toDataURL";
 
 type BlogMetadata = { slug: string };
 
@@ -104,16 +105,4 @@ export async function generateStaticParams() {
       slug: mdnameUtils.slugify(post.name),
     };
   });
-}
-
-function toDataURL(src: string): string {
-  const content = readFileSync(src);
-  const mimeType = mime.getType(src);
-  const b64 = Buffer.from(content).toString("base64");
-
-  if (!mimeType) {
-    return "";
-  }
-
-  return `data:${mimeType};base64,${b64}`;
 }
