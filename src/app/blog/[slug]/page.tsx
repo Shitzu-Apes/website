@@ -14,7 +14,6 @@ export async function generateMetadata(
   { params }: { params: BlogMetadata },
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  console.log("generating metadata for blog");
   const post = readFileSync(`./blogs/${params.slug}/readme.md`, "utf-8");
 
   const frontmatter = post.split("---")[1];
@@ -25,21 +24,27 @@ export async function generateMetadata(
   const thumbnail = files.find((file) => file.startsWith("thumbnail"));
 
   if (thumbnail) {
-    const dataURL = toDataURL(`./blogs/${params.slug}/${thumbnail}`);
+    const basePath = process.env.BASEPATH ? `${process.env.BASEPATH}/` : "";
+    const thumbnailPath = `${process.env.METADATABASE}/${basePath}blog/${params.slug}/${thumbnail}`;
+
     return {
       title,
       description,
       openGraph: {
+        title,
+        description,
         images: [
           {
-            url: dataURL,
+            url: thumbnailPath,
           },
         ],
       },
       twitter: {
+        title,
+        description,
         images: [
           {
-            url: dataURL,
+            url: thumbnailPath,
           },
         ],
       },
