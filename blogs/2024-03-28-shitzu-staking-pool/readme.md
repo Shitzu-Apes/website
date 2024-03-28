@@ -27,6 +27,10 @@ Our staking pool stands out by offering a distinctive rewards structure:
 
 This model ensures that while we support the fun and creativity of the meme ecosystem, stakeholders also benefit from a serious and well-considered staking opportunity.
 
+## Empowering Decentralization
+
+By staking with our validator, you not only earn rewards in various meme tokens but also contribute significantly to the decentralization of the NEAR Protocol. Your participation helps to secure and decentralize the network, making it more robust and resilience.
+
 ## How to Participate
 
 Ready to be part of a staking experience that's both rewarding and enjoyable? Here's how you can join us:
