@@ -17,8 +17,14 @@ export async function generateMetadata(
   const post = readFileSync(`./blogs/${params.slug}/readme.md`, "utf-8");
 
   const frontmatter = post.split("---")[1];
-  const title = frontmatter.match(/title: "(.*?)"/)?.[1];
-  const description = frontmatter.match(/description: "(.*?)"/)?.[1];
+  const title =
+    frontmatter.match(/title: (.*)/)?.[1] + "- SHITZU" ||
+    (await parent).title ||
+    "";
+  const description =
+    frontmatter.match(/description: (.*)/)?.[1] ||
+    (await parent).description ||
+    "";
 
   const files = readdirSync(`./blogs/${params.slug}`);
   const thumbnail = files.find((file) => file.startsWith("thumbnail"));

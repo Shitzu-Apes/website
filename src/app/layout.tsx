@@ -9,7 +9,6 @@ import FavIcon from "@/assets/favicon.ico";
 import OGImage from "@/assets/og.webp";
 
 import "./globals.css";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +26,7 @@ export const metadata: Metadata = {
     "coin",
     "erc-20",
     "near",
-    "aurora"
+    "aurora",
   ],
   icons: {
     icon: FavIcon.src,
@@ -69,8 +68,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script defer data-domain="shitzuapes.xyz" src="https://plausible.io/js/script.js"></script>
-        <meta name="google-site-verification" content="FmRJiRE0VYmRc-BJ9CQL1B6r8TCiDv7ouhGRah7AfKc" />
+        <script
+          defer
+          data-domain="shitzuapes.xyz"
+          src="https://plausible.io/js/script.js"
+        ></script>
+        <meta
+          name="google-site-verification"
+          content="FmRJiRE0VYmRc-BJ9CQL1B6r8TCiDv7ouhGRah7AfKc"
+        />
       </head>
       <body className={`${inter.className} bg-black`}>
         <Navbar />
