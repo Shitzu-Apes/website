@@ -16,7 +16,7 @@ We are thrilled to announce the launch of SHITZU's innovative staking pool, a ne
 
 Our staking pool stands out by offering a distinctive rewards structure:
 
-- **Revenue Sharing**: 50% of the staking fees generated will be contributed to the [SHITZU DAO](https://near.org/near/widget/ProfilePage?accountId=shitzu.sputnik-dao.near), reinforcing our commitment to the community and meme ecosystem.
+- **Revenue Sharing**: 50% of the staking fees generated will be contributed to the [SHITZU DAO](https://near.org/astraplusplus.ndctools.near/widget/home?tab=proposals&daoId=shitzu.sputnik-dao.near&page=dao), reinforcing our commitment to the community and meme ecosystem.
 - **Token Emissions**: To cover the 50% fee, we will distribute an equivalent of $1,000 USD per month in the following tokens to our stakeholders:
   - $SHITZU
   - $BLACKDRAGON
