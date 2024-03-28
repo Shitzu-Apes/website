@@ -6,11 +6,60 @@ import remarkFrontmatter from "remark-frontmatter";
 import mdnameUtils from "@/utils/mdname";
 import mime from "mime";
 import Breadcrumbs from "@/components/BreadCrumbs";
+import { Metadata, ResolvingMetadata } from "next";
+
+type BlogMetadata = { slug: string };
+
+export async function generateMetadata(
+  { params }: { params: BlogMetadata },
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  console.log("generating metadata for blog");
+  const post = readFileSync(`./blogs/${params.slug}/readme.md`, "utf-8");
+
+  const frontmatter = post.split("---")[1];
+  const title = frontmatter.match(/title: "(.*?)"/)?.[1];
+  const description = frontmatter.match(/description: "(.*?)"/)?.[1];
+
+  const files = readdirSync(`./blogs/${params.slug}`);
+  const thumbnail = files.find((file) => file.startsWith("thumbnail"));
+
+  if (thumbnail) {
+    const dataURL = toDataURL(`./blogs/${params.slug}/${thumbnail}`);
+    return {
+      title,
+      description,
+      openGraph: {
+        images: [
+          {
+            url: dataURL,
+          },
+        ],
+      },
+      twitter: {
+        images: [
+          {
+            url: dataURL,
+          },
+        ],
+      },
+    };
+  }
+
+  const previousImages = (await parent).openGraph?.images || [];
+  return {
+    title,
+    description,
+    openGraph: {
+      images: [...previousImages],
+    },
+  };
+}
 
 export default async function BlogPage({
   params: { slug },
 }: {
-  params: { slug: string };
+  params: BlogMetadata;
 }) {
   const post = readFileSync(`./blogs/${slug}/readme.md`, "utf-8");
 
