@@ -6,7 +6,7 @@ import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 
 import FavIcon from "@/assets/favicon.ico";
-import OGImage from "@/assets/og.webp";
+import OGImage from "@/assets/og.png";
 
 import "./globals.css";
 
