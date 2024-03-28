@@ -18,7 +18,7 @@ export async function generateMetadata(
 
   const frontmatter = post.split("---")[1];
   const title =
-    frontmatter.match(/title: (.*)/)?.[1] + "- SHITZU" ||
+    frontmatter.match(/title: (.*)/)?.[1] + " - SHITZU" ||
     (await parent).title ||
     "";
   const description =
