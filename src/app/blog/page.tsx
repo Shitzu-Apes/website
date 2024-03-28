@@ -1,8 +1,9 @@
-import { readdirSync } from "fs";
+import { readFileSync, readdirSync } from "fs";
 
 import { BlogMetadata } from "@/utils/blog";
 import { readFrontmatter } from "@/utils/markdown";
 import Link from "next/link";
+import toDataURL from "@/utils/toDataURL";
 
 export default async function BlogPage() {
   let files = readdirSync("./blogs", { withFileTypes: true });
@@ -15,9 +16,19 @@ export default async function BlogPage() {
   for await (const file of files) {
     const frontmatter = await readFrontmatter(`./blogs/${file.name}/readme.md`);
 
+    // find thumbnail.* in the blog folder
+    const files = readdirSync(`./blogs/${file.name}`);
+    const thumbnail = files.find((file) => file.startsWith("thumbnail"));
+
+    // if thumbnail exists, read and convert it to base64
+    let thumbnailBase64 = thumbnail
+      ? toDataURL(`./blogs/${file.name}/${thumbnail}`)
+      : "";
+
     const metadata = BlogMetadata.parse({
       ...(frontmatter.data.matter as Object),
       slug: file.name,
+      thumbnail: thumbnailBase64,
     });
     blogs.push(metadata);
   }
@@ -37,26 +48,34 @@ export default async function BlogPage() {
               <Link
                 href={`/blog/${blog.slug}`}
                 key={blog.title}
-                className="flex max-w-xl flex-col items-start justify-between"
+                className="relative isolate flex flex-col gap-8 lg:flex-row"
               >
-                <div className="flex items-center gap-x-4 text-xs">
-                  <time dateTime={blog.date} className="text-gray-500">
-                    {blog.date}
-                  </time>
-                  <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                    {blog.tags[0]}
-                  </span>
+                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
+                  <img
+                    src={blog.thumbnail}
+                    alt=""
+                    className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+                  />
+                  <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
-                <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <span>
+                <div>
+                  <div className="flex items-center gap-x-4 text-xs">
+                    <time dateTime={blog.date} className="text-gray-500">
+                      {blog.date}
+                    </time>
+                    <div className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                      {blog.tags[0]}
+                    </div>
+                  </div>
+                  <div className="group relative max-w-xl">
+                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                       <span className="absolute inset-0" />
                       {blog.title}
-                    </span>
-                  </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                    {blog.description}
-                  </p>
+                    </h3>
+                    <p className="mt-5 text-sm leading-6 text-gray-600">
+                      {blog.description}
+                    </p>
+                  </div>
                 </div>
               </Link>
             ))}
