@@ -14,7 +14,7 @@ In celebration of SHITZU 2nd birthdays, the **SHITZU Revival Collection** was fu
 
 Immediately upon release, these NFTs began trading on Mintbase with an initial value of approximately Ⓝ 4. Notably, a rare piece from the collection was directly traded over-the-counter (OTC) for Ⓝ 100, highlighting the exceptional value and interest attached to these digital assets. Further details on this transaction can be found [here](https://twitter.com/yuensid/status/1774834617608229137).
 
-![SHITZU Task Completion Reward](image.png)
+![SHITZU Task Completion Reward](./task.png)
 
 To further engage the community and enhance the vibrancy of the meme ecosystem, the SHITZU DAO introduced a unique incentive. Holders who complete certain tasks as outlined on the SHITZU Telegram channel are eligible to receive double the rewards, making participation in the ecosystem not only enjoyable but also rewarding.
 
