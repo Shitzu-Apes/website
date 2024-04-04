@@ -28,3 +28,12 @@ Additional coverage and commentary on this historic minting event can be found t
 - [@ParasHQ Announcement](https://twitter.com/ParasHQ/status/1775011842630582456)
 - [@MintBase Announcement](https://twitter.com/mintbase/status/1775074605520031989)
 - [@MITTE_gg Announcement](https://twitter.com/MITTE_gg/status/1775433072810566007)
+
+## Buy Now: Exclusive SHITZU Revival Collection
+
+Seize the opportunity to own a piece of digital art history with the SHITZU Revival Collection. Each NFT is a gateway to the vibrant SHITZU community and much more.
+
+- [Tradeport](https://www.tradeport.xyz/near/collection/shitzu.bodega-lab.near)
+- [Mitte](https://beta.mitte.gg/?contractAddress=shitzu.bodega-lab.near)
+- [Paras](https://paras.id/collection/shitzu.bodega-lab.near)
+- [MintBase](https://www.mintbase.xyz/contract/shitzu.bodega-lab.near/nfts/all/0)
