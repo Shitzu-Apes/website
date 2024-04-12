@@ -3,8 +3,8 @@ import ShitzuFarm from "@/assets/tokenfarm.png";
 export default function TokenFarm() {
   return (
     <div className="w-full bg-primary py-10">
-      <div className="w-full h-full flex items-center justify-center">
-        <div className="w-1/2 pl-10">
+      <div className="w-full h-full flex flex-col-reverse sm:flex-row items-center justify-center">
+        <div className="w-full sm:w-1/2 px-5 sm:pl-10 mt-10 sm:mt-0">
           <h2 className="text-2xl font-bold tracking-tight sm:text-5xl text-gray-900">
             SHITZU Token Farm
           </h2>
@@ -30,7 +30,7 @@ export default function TokenFarm() {
           </div>
         </div>
 
-        <div className="w-1/2 h-full mx-5">
+        <div className="w-full sm:w-1/2 h-full mx-5 px-5 md:px-0">
           <img
             className="rounded-lg border-white border-4"
             src={ShitzuFarm.src}
