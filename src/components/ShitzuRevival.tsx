@@ -22,7 +22,7 @@ const NFT_LINKS = [
   {
     platform: "Mitte",
     logo: MitteLogo,
-    link: "https://mitte.gg/?contractAddress=shitzu.bodega-lab.near",
+    link: "https://beta.mitte.gg/?contractAddress=shitzu.bodega-lab.near",
   },
   {
     platform: "Tradeport",
