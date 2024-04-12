@@ -2,6 +2,7 @@ import ChainTab from "@/components/ChainTab";
 import FAQ from "@/components/FAQ";
 import LandingBlog from "@/components/LandingBlog";
 import Scene from "@/components/Scene";
+import ShitzuRevival from "@/components/ShitzuRevival";
 import Tokenomics from "@/components/Tokenomics";
 import { BlogMetadata } from "@/utils/blog";
 import { readFrontmatter } from "@/utils/markdown";
@@ -61,6 +62,9 @@ export default async function Home() {
       </div>
       <div className="w-full">
         <Tokenomics />
+      </div>
+      <div className="w-full">
+        <ShitzuRevival />
       </div>
       <div className="w-full">
         <LandingBlog blogs={blogmetadata} />
