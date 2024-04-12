@@ -33,13 +33,13 @@ const NFT_LINKS = [
 
 export default function ShitzuRevival() {
   return (
-    <div className="w-full h-[500px] bg-primary py-10">
-      <div className="w-full h-full flex items-center justify-center">
+    <div className="w-full bg-primary py-10">
+      <div className="w-full h-full flex flex-col sm:flex-row items-center justify-center">
         <div
-          className="w-1/2 h-full bg-no-repeat bg-center"
+          className="w-full sm:w-1/2 h-[500px] bg-no-repeat bg-center"
           style={{ backgroundImage: `url(${ShitzuFace.src})` }}
         ></div>
-        <div className="w-1/2 pr-10">
+        <div className="w-full sm:w-1/2 px-5 sm:pr-10">
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-gray-900">
             SHITZU Revival NFT
           </h2>
@@ -59,13 +59,13 @@ export default function ShitzuRevival() {
           </div>
 
           <div className="w-full">
-            <h3 className="text-xl font-semibold">Find us on</h3>
+            <h3 className="text-xl font-semibold mb-4">Find us on</h3>
             <div className="flex gap-5 flex-wrap">
               {NFT_LINKS.map(({ platform, link, logo }) => {
                 return (
                   <a
                     key={link}
-                    className="mt-6 cursor-pointer rounded-lg w-[150px] text-center bg-black px-3 py-2 text-lg font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:bg-primary-light"
+                    className="mt-0 sm:mt-6 cursor-pointer rounded-lg w-full sm:w-[40%] text-center bg-black px-3 py-2 text-lg font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:bg-primary-light"
                     href={link}
                     target="_blank"
                     rel="noreferrer"
