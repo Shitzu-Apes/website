@@ -57,3 +57,7 @@ export { default as RefFinanceLogo } from "@/assets/ref.png";
 export { default as TrisolarisLogo } from "@/assets/trisolaris.png";
 export { default as CoingeckoLogo } from "@/assets/coingecko.png";
 export { default as NearBlocksLogo } from "@/assets/nearblocks.svg";
+export { default as ParasLogo } from "@/assets/Paras.png";
+export { default as MintBaseLogo } from "@/assets/Mintbase.png";
+export { default as MitteLogo } from "@/assets/Mitte.jpg";
+export { default as TradeportLogo } from "@/assets/Tradeport.png";
