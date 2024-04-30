@@ -1,19 +1,16 @@
 ---
 date: 2024-05-01
-title: Ref MemeSeason 2.0
-description: Vote for SHITZU by staking xREF and/or donate SHITZU tokens to honor and support our xREF stakers. Users staking xRef in the SHITZU pool will receive these donations. The top 5 memes will advance to the next round of the ‘Meme Competition’ from the 4th of May lasting one month. With a total pool of 125K $REF & 8333 $NEAR promosing rewards up the grabs.
+title: MemeSeason 2.0
+description: Vote for SHITZU by staking xREF and/or donate SHITZU tokens to honor and support our xREF stakers. Users staking xRef in the SHITZU pool will receive these donations. The top 5 memes will advance to the next round of the meme competition which starts on the 4th of May. A total reward pool of 156K $REF and 10416 $NEAR is up the grabs.
 author: steekjenear
-tags: [MemeSeason]
+tags: [memeseason]
 ---
 
-![thumbnail](./thumbnail.jpeg)
+![thumbnail](./thumbnail.jpg)
 
 # SHITZU xRef MemeSeason staking program
 
-Ref Meme Season 2.0 is live, and this time you need xREF to vote for $SHITZU! A new selection of top 5 reward Meme tokens is voted by holders of xREF, with 25% boosted reward for the overall campaign (NEAR + Ref reward). Meme token projects ask xREF holders to deposit into their vault for the selection from May 1st. During the voting process, Memetoken communities can participate in donating in the 'Show love for voters' section and allocate rewards to users to incentivize them to stake xREF and vote for the Memetoken. The first voting period is a 48h window, to vote in xREF for your preferred Memetoken
-After the 48h, we have the top three Memecoins selected through xREF staking
-The following 24h, after the 48h, is for users to now stake their Memecoin token to compete as before 
-
+Ref Meme Season 2.0 is live for which initially xREF is required to vote for SHITZU! A selection of meme tokens is voted for by holders of xREF, with 25% boosted reward for the overall campaign. The Shitzu community kindly invites all xREF holders to deposit xREF into our SHITZU vault. As a token of appreciation, our community donates $SHITZU through the 'show love for voters' section to incentivize and encourage xREF stakers to join us. The first voting period last 48h and requires xREF. After this round the top memecoins can now be staked similar to [prior round](https://shitzuapes.xyz/blog/2024-01-15-staking) 
 
 [Learn more about staking on Ref Finance](https://x.com/finance_ref/status/1783435846835998726)
 
