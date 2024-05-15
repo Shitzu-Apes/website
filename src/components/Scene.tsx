@@ -2,7 +2,6 @@
 
 import { Canvas } from "@react-three/fiber";
 import ShitzuToken from "./ShitzuToken";
-import { OrbitControls } from "@react-three/drei";
 
 export default function Scene() {
   return (
