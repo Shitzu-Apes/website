@@ -9,6 +9,7 @@ import FavIcon from "@/assets/favicon.ico";
 import OGImage from "@/assets/og.png";
 
 import "./globals.css";
+import BottomBanner from "@/components/BottomBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -83,6 +84,7 @@ export default function RootLayout({
         <Banner />
         {children}
         <Footer />
+        <BottomBanner />
       </body>
     </html>
   );

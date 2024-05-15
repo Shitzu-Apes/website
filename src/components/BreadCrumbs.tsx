@@ -1,11 +1,6 @@
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 
-const pages = [
-  { name: "Blog", href: "/blog", current: false },
-  { name: "Project Nero", href: "#", current: true },
-];
-
 export default function Breadcrumbs({
   name,
   href,
