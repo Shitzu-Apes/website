@@ -12,7 +12,7 @@ In order to stake $SHITZU head over to [Ref Finance](https://app.ref.finance/mem
 
 The current staking APY is 10.73% and includes dual token rewards; namely $NEAR and $REF. Rewards can be claimed through the ‘Yours’ section. Here, you will find an option to unstake your tokens as well. The unstaked assets will be available to be withdrawn within 5 days.
 
-![thumbnail](./thumbnail.jpeg)
+![thumbnail](./thumbnail.gif)
 
 Alternatively, xREF can be staked (a.k.a. used to vote) to support the shitzu community as well. From the “feed shitzu” section, choose ‘xREF’ and select the required amount of xREF to stake.
 The top five meme coins with the most xREF staked will receive boosted LP incentives.
