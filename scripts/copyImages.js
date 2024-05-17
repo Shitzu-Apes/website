@@ -13,7 +13,7 @@ fs.readdir(blogsDir, (err, slugs) => {
       if (err) throw err;
 
       files.forEach((file) => {
-        if (file.match(/thumbnail\.(png|webp|jpeg)$/)) {
+        if (file.toLowerCase().match(/thumbnail\.(png|webp|jpeg|jpg)$/)) {
           const srcPath = path.join(srcDir, file);
           const destPath = path.join(publicDir, slug, file);
 
