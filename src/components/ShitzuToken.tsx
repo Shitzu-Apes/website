@@ -1,9 +1,16 @@
 "use client";
 
-import { Circle } from "@react-three/drei";
+import { Circle, Ring } from "@react-three/drei";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
-import { BackSide, Color, FrontSide, Group, ShapeGeometry } from "three";
+import {
+  BackSide,
+  Color,
+  DoubleSide,
+  FrontSide,
+  Group,
+  ShapeGeometry,
+} from "three";
 import { SVGLoader } from "three/examples/jsm/Addons.js";
 
 import ShitzuWireframe from "@/assets/shitzu-wireframe.svg";
@@ -22,45 +29,49 @@ export default function ShitzuToken() {
   useFrame((_state, delta) => {
     if (!ref.current) return;
 
-    ref.current.rotation.z += delta;
+    ref.current.rotation.y += delta;
   });
 
   return (
     <group
       ref={ref}
-      rotation={[Math.PI / 2, Math.PI, 0]}
+      rotation={[0, 0, 0]}
       position={[0, 0, 0]}
       scale={innerWidth < 768 ? [2, 2, 2] : [1.5, 1.5, 1.5]}
     >
-      <group position={[-1, 0.1, 1]} rotation={[Math.PI / 2, 0, 0]}>
-        <Circle args={[1, 256]} position={[1, -1, 0.001]}>
-          <meshStandardMaterial color={new Color("black")} side={BackSide} />
+      <group position={[0, 0, 0]} rotation={[0, 0, 0]}>
+        <Ring args={[0.9, 1, 256, 1, 0, Math.PI * 2]} position={[0, 0, 0.101]}>
+          <meshLambertMaterial color={new Color("#31c891")} side={FrontSide} />
+        </Ring>
+        <Circle args={[1, 256]} position={[0, -0, 0.1]}>
+          <meshLambertMaterial color={new Color("#000")} side={FrontSide} />
         </Circle>
         <mesh
           geometry={geometry}
           scale={[2 / 238, 2 / 238, 2 / 238]}
-          rotation={[Math.PI, 0, 0]}
+          position={[-1, 1, 0.11]}
+          rotation={[0, Math.PI * 1, Math.PI]}
         >
-          <meshStandardMaterial color={new Color("#31c891")} />
+          <meshLambertMaterial side={DoubleSide} color={new Color("#31c891")} />
         </mesh>
       </group>
 
-      <mesh>
+      <mesh rotation={[0, Math.PI * 0.5, Math.PI * 0.5]}>
         <cylinderGeometry args={[1, 1, 0.2, 256, 256, true]} />
-        <meshStandardMaterial color={new Color("#31c891")} />
+        <meshLambertMaterial color={new Color("#31c891")} />
       </mesh>
 
-      <group position={[-1, -0.1, 1]} rotation={[Math.PI / 2, 0, 0]}>
-        <Circle args={[1, 256]} position={[1, -1, -0.001]}>
-          <meshStandardMaterial color={new Color("#31c891")} side={FrontSide} />
+      <group position={[0, 0, 0]} rotation={[0, 0, 0]}>
+        <Circle args={[1, 256]} position={[0, 0, -0.1]}>
+          <meshLambertMaterial color={new Color("#31c891")} side={BackSide} />
         </Circle>
         <mesh
           geometry={geometry}
           scale={[2 / 238, 2 / 238, 2 / 238]}
-          position={[2, 0, 0]}
-          rotation={[-Math.PI, Math.PI, 0]}
+          position={[1, 1, -0.11]}
+          rotation={[0, 0, Math.PI * 1]}
         >
-          <meshStandardMaterial color={"#fff"} />
+          <meshLambertMaterial side={BackSide} color={"#fff"} />
         </mesh>
       </group>
     </group>

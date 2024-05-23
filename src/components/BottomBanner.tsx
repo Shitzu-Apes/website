@@ -26,15 +26,17 @@ export default function BottomBanner() {
     hours: number;
     minutes: number;
     seconds: number;
-  }>(getCountdown());
+  } | null>(null);
 
   useEffect(() => {
+    setCountDown(getCountdown());
+
     const interval = setInterval(() => {
       setCountDown(getCountdown());
     }, 1000);
 
     return () => clearInterval(interval);
-  });
+  }, []);
 
   return isBannerVisible ? (
     <div className="pointer-events-none fixed inset-x-0 bottom-0 sm:flex sm:justify-center sm:px-6 sm:pb-5 lg:px-8 z-10">
