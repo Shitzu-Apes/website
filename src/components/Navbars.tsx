@@ -22,6 +22,7 @@ import Link from "next/link";
 const navigation = [
   { name: "Blog", href: "/blog", current: false },
   { name: "FAQ", href: "/#FAQ", current: false },
+  { name: "App", href: "https://app.shitzuapes.xyz", current: false },
   { name: "Token Farm", href: "https://tkn.shitzuapes.xyz", current: false },
 ];
 
