@@ -1,4 +1,5 @@
 import ShitzuFarm from "@/assets/tokenfarm.png";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 export default function TokenFarm() {
   return (
@@ -23,7 +24,8 @@ export default function TokenFarm() {
                 rel="noreferrer"
               >
                 <div className="flex items-center justify-center">
-                  Visit SHITZU Token Farm
+                  Visit SHITZU Token Farm{" "}
+                  <ArrowRightIcon className="h-6 w-6 ml-2" />
                 </div>
               </a>
             </div>
