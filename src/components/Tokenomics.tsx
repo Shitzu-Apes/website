@@ -5,7 +5,7 @@ export default function Tokenomics() {
   return (
     <div className="mx-auto">
       <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-        <h2 className="mx-auto max-w-2xl text-3xl font-bold font-mono tracking-tight sm:text-5xl text-primary">
+        <h2 className="mx-auto max-w-landing text-3xl font-bold font-mono tracking-tight sm:text-5xl text-primary">
           576,167,000
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">

@@ -3,7 +3,7 @@ import ShitzuFarm from "@/assets/tokenfarm.png";
 export default function TokenFarm() {
   return (
     <div className="w-full bg-primary py-10">
-      <div className="w-full h-full flex flex-col-reverse sm:flex-row items-center justify-center">
+      <div className="w-full h-full max-w-landing mx-auto flex flex-col-reverse sm:flex-row items-center justify-center">
         <div className="w-full sm:w-1/2 px-5 sm:pl-10 mt-10 sm:mt-0">
           <h2 className="text-2xl font-bold tracking-tight sm:text-5xl text-gray-900">
             SHITZU Token Farm
@@ -17,7 +17,7 @@ export default function TokenFarm() {
           <div className="w-full">
             <div className="flex gap-5 flex-wrap">
               <a
-                className="mt-14 w-full cursor-pointer rounded-lg text-center bg-black text-primary px-3 py-3 text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:bg-primary-dark hover:text-white"
+                className="mt-14 cursor-pointer rounded-lg text-center bg-black text-primary px-10 py-3 text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:bg-primary-dark hover:text-white"
                 href={"https://tkn.shitzuapes.xyz"}
                 target="_blank"
                 rel="noreferrer"
