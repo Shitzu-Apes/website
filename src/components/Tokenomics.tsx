@@ -26,7 +26,7 @@ export default function Tokenomics() {
             Coingecko
           </a>
           <Link
-            href="/blog"
+            href="/blog/2022-04-01-introduction"
             className="text-sm font-semibold leading-6 text-white inline-flex items-center"
           >
             Learn more <span aria-hidden="true">→</span>
