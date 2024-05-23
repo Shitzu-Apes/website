@@ -43,9 +43,9 @@ export default function Hero() {
               Launch App <ArrowRightIcon className="h-8 w-8 ml-2 inline" />
             </a>
           </div>
-          <div className="mr-auto flex flex-col justify-stretch items-stretch text-lg mt-16 w-full md:w-auto">
+          <div className="mr-auto flex flex-col justify-stretch items-stretch text-lg mt-16 w-full max-w-lg">
             <span className="text-xl">Find us on</span>
-            <div className="mt-3 w-full md:w-auto">
+            <div className="mt-3 w-full ">
               <ChainTab />
             </div>
           </div>

@@ -17,10 +17,10 @@ import Link from "next/link";
 export default function ChainTab() {
   return (
     <Tab.Group>
-      <Tab.List className={"flex mb-5 w-full md:w-auto"}>
+      <Tab.List className={"flex mb-5 w-full"}>
         <Tab
           className={({ selected }) =>
-            `flex items-center border-2 border-r-0 px-3 py-1 rounded-l-md w-1/2 md:w-auto ${
+            `flex items-center border-2 border-r-0 px-3 py-3 rounded-l-md w-1/2 ${
               selected ? "bg-white text-primary" : ""
             }`
           }
@@ -34,7 +34,7 @@ export default function ChainTab() {
         </Tab>
         <Tab
           className={({ selected }) =>
-            `flex items-center border-2 px-3 py-1 rounded-r-md w-1/2 md:w-auto ${
+            `flex items-center border-2 px-3 py-3 rounded-r-md w-1/2 ${
               selected ? "bg-white text-primary" : ""
             }`
           }
@@ -48,11 +48,11 @@ export default function ChainTab() {
         </Tab>
       </Tab.List>
       <Tab.Panels>
-        <Tab.Panel className={"w-full md:w-auto"}>
-          <div className="flex flex-col md:flex-row items-stretch md:items-center mb-4 gap-3">
+        <Tab.Panel className={"w-full"}>
+          <div className="flex flex-col md:flex-row items-stretch md:items-center mb-4 gap-3 w-full">
             <Clipboard value="token.0xshitzu.near" />
             <a
-              className="w-full md:w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
+              className="w-full md:max-w-36 relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
               href="https://nearblocks.io/token/token.0xshitzu.near"
               target="_blank"
               rel="noreferrer"
