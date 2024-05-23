@@ -35,9 +35,9 @@ export default function Hero() {
           <a
             href="https://app.shitzuapes.xyz/"
             target="_blank"
-            className="px-10 py-4 text-primary text-2xl"
+            className="px-12 py-4 text-primary text-2xl border-2 border-primary rounded-lg"
           >
-            Launch App <ArrowRightIcon className="h-6 w-6 ml-2 inline" />
+            Launch App <ArrowRightIcon className="h-8 w-8 ml-2 inline" />
           </a>
         </div>
         <div className="mr-auto flex flex-col justify-stretch items-stretch text-lg mt-16 w-full md:w-auto">
