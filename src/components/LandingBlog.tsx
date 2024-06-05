@@ -27,7 +27,7 @@ export default function LandingBlog({ blogs }: { blogs: TBlogMetadata[] }) {
                   {blog.tags[0]}
                 </span>
               </div>
-              <div className="group relative">
+              <div className="group relative flex-1">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                   <Link href={`/blog/${blog.slug}`}>
                     <span className="absolute inset-0" />
