@@ -89,6 +89,25 @@ export default async function BlogPage({
             const dataURL = toDataURL(`./blogs/${slug}/${props.src}`);
             return <img {...props} src={dataURL} />;
           },
+          a: ({ node, ...props }) => {
+            if ("href" in props === false || !props.href) {
+              return <a {...props} />;
+            }
+            if (props.href.startsWith("http")) {
+              return (
+                <a {...props} target="_blank" rel="noopener noreferrer">
+                  {props.children}
+                </a>
+              );
+            }
+
+            const href = props.href.replace(/^\//, "");
+            return (
+              <a {...props} href={`/${href}`}>
+                {props.children}
+              </a>
+            );
+          },
         }}
       >
         {post}

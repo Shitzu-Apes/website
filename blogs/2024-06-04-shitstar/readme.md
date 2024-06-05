@@ -1,9 +1,9 @@
 ---
 date: 2024-05-23
 title: You can't be me I'm a SHITSTAR
-description: The Shitzu community has wrapped various memecoins into $DOGSHIT shares. $DOGSHIT will be emitted through staking at the shitzu.pool.near validator.
+description: Don't miss out on this opportunity to enhance your reputation within the SHITZU ecosystem. Remember, you are not just donating or participating—you are becoming the Shitstar.
 author: Bob
-tags: [validator]
+tags: [shitstars]
 ---
 
 ## You can't be me, I'm a SHITSTAR
