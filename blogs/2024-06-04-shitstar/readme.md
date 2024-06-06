@@ -1,5 +1,5 @@
 ---
-date: 2024-05-23
+date: 2024-06-04
 title: You can't be me I'm a SHITSTAR
 description: Don't miss out on this opportunity to enhance your reputation within the SHITZU ecosystem. Remember, you are not just donating or participating—you are becoming the Shitstar.
 author: Bob
