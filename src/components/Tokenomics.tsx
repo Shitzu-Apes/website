@@ -5,15 +5,21 @@ export default function Tokenomics() {
   return (
     <div className="mx-auto">
       <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-        <h2 className="mx-auto max-w-landing text-3xl font-bold font-mono tracking-tight sm:text-5xl text-primary">
+        <h2 className="relative mx-auto w-fit max-w-landing text-3xl font-bold font-mono tracking-tight sm:text-5xl text-red-400 line-through">
           576,167,000
+          {/* Top left and tilt 45 degree */}
+          <div className="absolute top-0 right-0 transform translate-x-1/4 -translate-y-1/2 rotate-[20deg] text-black z-100 bg-primary px-1">
+            306,242,069
+          </div>
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
           Being born on April Fool's,{" "}
-          <span className="text-primary text-bold">$SHITZU</span> keeps it
-          foolishly simple:
-          <span className="text-primary text-bold"> 576,167,000</span> tokens,
-          period. All circulating, no lock-ups, no vesting.
+          <span className="text-primary font-bold">$SHITZU</span> keeps it
+          foolishly simple:{" "}
+          <span className="bg-primary font-bold text-black px-1">
+            306,242,069
+          </span>{" "}
+          tokens, period. All circulating, no lock-ups, no vesting.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a

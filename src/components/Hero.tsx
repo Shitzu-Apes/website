@@ -4,26 +4,6 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import HeroBackground from "./HeroBackground";
 import { NearOutlineIcon, TelegramIcon } from "./Icons";
 
-// const Quotes = [
-//   <>
-//     Hehe.. Bro remember the day I told you to join Shitzu. This is best hangout
-//     place is entire web3
-//   </>,
-//   <>
-//     We are only having this conversation because shitzu is mainly community
-//     driven. Other projects won’t even care about our opinions and do what they
-//     feel like. More reason Shitzu is goated 🔥❤️💪🏽
-//   </>,
-//   <>
-//     FYI, Shitzu chat is the OG grassroots incubator of{" "}
-//     <span className="text-primary inline-flex items-center gap-2 align-bottom font-bold">
-//       <NearOutlineIcon className="h-6 w-6 inline text-primary" /> NEAR
-//     </span>{" "}
-//     We have become that by doing the impossible, resurrecting a rugged meme. We
-//     are not here for exit liquidity, We r your liquidity.
-//   </>,
-// ];
-
 export default function Hero() {
   return (
     <div className="relative min-h-[100vh] w-full px-3 md:px-0">
@@ -32,7 +12,7 @@ export default function Hero() {
       </div>
 
       <div className="w-full max-w-landing flex flex-col-reverse md:flex-row place-items-center mx-auto">
-        <div className="w-full md:w-3/5 h-full font-bold text-white md:px-10 flex flex-col items-start justify-start">
+        <div className="w-full md:w-3/5 h-full font-bold text-white pb-6 md:pb-0 md:px-10 flex flex-col items-start justify-start">
           <h1 className="w-full text-primary text-6xl md:text-8xl">SHITZU</h1>
           <h2 className="w-full max-w-2xl text-2xl md:text-3xl font-bold text-left text-white mt-5 leading-relaxed">
             We are the OG grassroots incubator of{" "}
@@ -60,7 +40,7 @@ export default function Hero() {
               <ArrowRightIcon className="h-6 md:h-8 w-6 md:w-8 ml-2 inline" />
             </a>
           </div>
-          <div className="mr-auto flex flex-col justify-stretch items-stretch text-lg mt-16 w-full max-w-lg">
+          <div className="mx-auto md:ml-0 flex flex-col justify-stretch items-stretch text-lg mt-16 w-full max-w-xl">
             <span className="text-xl">Find us on</span>
             <div className="mt-3 w-full ">
               <ChainTab />

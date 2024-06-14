@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.METADATABASE!),
-  title: "SHITZU - 576,167,000",
+  title: "SHITZU - 306,242,069",
   description:
     "Being born on April Fool's, $SHITZU keeps it foolishly simple: 576,167,000 tokens, period. All circulating, no lock-ups, no vesting.",
   keywords: [
@@ -81,10 +81,8 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} bg-black`}>
         <Navbar />
-        <Banner />
         {children}
         <Footer />
-        <BottomBanner />
       </body>
     </html>
   );
