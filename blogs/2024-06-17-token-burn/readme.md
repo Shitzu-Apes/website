@@ -5,7 +5,7 @@ description: The SHITZU community has boldly burned 47% of $SHITZU tokens, stabi
 author: Skytonet
 tags: [Burn, shitzu]
 ---
-![image](https://github.com/Shitzu-Apes/website/assets/134085495/95bd1b85-894a-41b7-9e1f-452824371b12)
+![Burn](./thumbnail.jpg)
 
 The SHITZU community has recently achieved a historic milestone by burning an astounding 269,924,931 million $SHITZU tokens🔥. This significant event was backed by the majority of our community, who supported the retirement of legacy tokens on its former blockchain. The tokens that have been removed from circulation represented approximately **47% of the total supply**!
 
