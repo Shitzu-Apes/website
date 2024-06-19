@@ -86,7 +86,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div className="hidden sm:flex space-x-4">
                   <a
-                    href={"https://twitter.com/shitzucommunity"}
+                    href={"https://twitter.com/shitzuonnear"}
                     className={classNames(
                       "rounded-md py-2 text-sm font-medium"
                     )}
@@ -162,7 +162,7 @@ export default function Navbar() {
                           className="h-6 mx-2 w-auto rounded-full"
                         />
                       </MenuItem>
-                      <MenuItem href="https://twitter.com/shitzucommunity">
+                      <MenuItem href="https://twitter.com/shitzuonnear">
                         <TwitterIcon className="h-6 w-6 mr-2 text-[#1da1f2]" />
                         <span>Twitter</span>
                       </MenuItem>

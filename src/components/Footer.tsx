@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-landing px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           <a
-            href={"https://twitter.com/shitzucommunity"}
+            href={"https://twitter.com/shitzuonnear"}
             className={"rounded-md py-2 text-sm font-medium"}
             target="_blank"
           >

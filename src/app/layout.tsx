@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@shitzucommunity",
+    creator: "@shitzuonnear",
     images: [
       {
         url: OGImage.src,
