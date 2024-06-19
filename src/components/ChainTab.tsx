@@ -57,7 +57,7 @@ export default function ChainTab() {
           Dexscreener
         </a>
         <a
-          href="https://www.dextools.io/app/en/near/pair-explorer/4369?t=1718792991778"
+          href="https://www.dextools.io/app/en/near/pair-explorer/4369"
           className="w-full md:w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
           target="_blank"
           rel="noreferrer"
