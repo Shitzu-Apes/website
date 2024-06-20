@@ -7,7 +7,7 @@ tags: [SHITZU, LIQUIDITY]
 ---
 
 ### Unlock Lucrative Opportunities as a $Shitzu Liquidity Provider
-
+![FARM](./thumbnail.png)
 Are you looking to maximize your earnings and explore new farming opportunities? The $Shitzu liquidity pool offers over 61% farm rewards APR, making it an excellent choice for savvy investors. This guide will walk you through the process of understanding and engaging with the $Shitzu liquidity pool to optimize your returns.
 
 ### Understanding Liquidity Pools
