@@ -32,6 +32,8 @@ Before adding liquidity, consider these key pool statistics, which can be found 
 
 To add liquidity to the $NEAR/$Shitzu pool:
 
+![TUTORIAL](./nearFarm(2).gif)
+
 1. Navigate to the pool interface.
 2. Select "Add Liquidity."
 3. Choose the corresponding amount of tokens.
