@@ -85,9 +85,15 @@ export default async function BlogPage({
         className={"prose-dark prose mx-auto"}
         components={{
           img: ({ node, ...props }) => {
-            readFileSync(`./blogs/${slug}/${props.src}`, "utf-8");
-            const dataURL = toDataURL(`./blogs/${slug}/${props.src}`);
-            return <img {...props} src={dataURL} />;
+            if (props.src?.endsWith("mp4")) {
+              const dataURL = toDataURL(`./blogs/${slug}/${props.src}`);
+              // @ts-ignore
+              return <video {...props} src={dataURL} controls />;
+            } else {
+              readFileSync(`./blogs/${slug}/${props.src}`, "utf-8");
+              const dataURL = toDataURL(`./blogs/${slug}/${props.src}`);
+              return <img {...props} src={dataURL} />;
+            }
           },
           a: ({ node, ...props }) => {
             if ("href" in props === false || !props.href) {
