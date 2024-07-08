@@ -9,6 +9,8 @@ tags: [Token, memecoins,shitzu]
 
 Welcome to Meme.cooking, a revolutionary NEAR-based marketplace that empowers users to create and launch their own tokens, with a particular focus on memecoins. Backed by the pioneering OG memecoin on NEAR, SHITZU, Meme.cooking is designed to democratize token creation and distribution, ensuring fair and transparent processes for all participants. Let's explore the key features and mechanisms that set Meme.cooking apart.
 
+![comingsoon](./thumbnail.png)
+
 ### Fair Price Discovery
 One of the standout features of Meme.cooking is its approach to price discovery. Unlike traditional Automated Market Maker (AMM) models, Meme.cooking employs a staking-based price model for initial token distribution. This model ensures a more equitable price discovery process, as the final price is determined by the outcome of an auction rather than being influenced by early access or insider advantages.
 
