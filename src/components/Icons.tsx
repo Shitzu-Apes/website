@@ -75,7 +75,6 @@ export { default as DexScreenerLogo } from "@/assets/dexscreener.png";
 export { default as NearLogo } from "@/assets/near.png";
 export { default as AuroraLogo } from "@/assets/aurora.png";
 export { default as RefFinanceLogo } from "@/assets/ref.png";
-export { default as TrisolarisLogo } from "@/assets/trisolaris.png";
 export { default as CoingeckoLogo } from "@/assets/coingecko.png";
 export { default as NearBlocksLogo } from "@/assets/nearblocks.svg";
 export { default as ParasLogo } from "@/assets/Paras.png";

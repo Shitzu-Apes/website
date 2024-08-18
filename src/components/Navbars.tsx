@@ -8,13 +8,10 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
-  AuroraLogo,
   GithubIcon,
-  NearLogo,
   RefFinanceLogo,
   ShitzuLogo,
   TelegramIcon,
-  TrisolarisLogo,
   TwitterIcon,
 } from "@/components/Icons";
 import Link from "next/link";
@@ -130,15 +127,6 @@ export default function Navbar() {
                     leaveTo="transform opacity-0 scale-95"
                   >
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-black py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <MenuItem href="https://www.trisolaris.io/#/swap?outputCurrency=0xB12BFcA5A55806AaF64E99521918A4bf0fC40802&inputCurrency=0x68e401B61eA53889505cc1366710f733A60C2d41">
-                        BUY on{" "}
-                        <img
-                          className="mx-2 h-4 w-auto rounded-full"
-                          src={TrisolarisLogo.src}
-                          alt="Ref Finance Logo"
-                        />{" "}
-                        Trisolaris
-                      </MenuItem>
                       <MenuItem href="https://app.ref.finance/#token.0xshitzu.near|near">
                         BUY on{" "}
                         <img
@@ -147,20 +135,6 @@ export default function Navbar() {
                           alt="Ref Finance Logo"
                         />
                         Ref
-                      </MenuItem>
-                      <MenuItem href="https://near.org/marior.near/widget/ShitzuMigrate">
-                        Migrate{" "}
-                        <img
-                          src={AuroraLogo.src}
-                          alt="Aurora Logo"
-                          className="h-6 mx-2 w-auto rounded-full"
-                        />
-                        →
-                        <img
-                          src={NearLogo.src}
-                          alt="near Logo"
-                          className="h-6 mx-2 w-auto rounded-full"
-                        />
                       </MenuItem>
                       <MenuItem href="https://twitter.com/shitzuonnear">
                         <TwitterIcon className="h-6 w-6 mr-2 text-[#1da1f2]" />
