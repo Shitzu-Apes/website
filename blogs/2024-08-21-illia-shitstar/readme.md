@@ -14,7 +14,7 @@ Big news, Shitzurians! The founder of NEAR, Illia Polosukhin, has officially joi
 
 This move is a huge boost for our community. Not only does it show the power and resilience of the Shitzu project, but it also solidifies our place in the NEAR ecosystem. With Illia onboard, our validator gains more credibility, and the Shitzu Revival NFTs shine even brighter.
 
-For those who are new here, check out this [guide](/blogs/2024-07-07-shitstar2/) to learn how to earn Shitstars by staking your Shitzu Revival NFTs or go to our [app](https://app.shitzuapes.xyz/shitstars).
+For those who are new here, check out this [guide](/blog/2024-07-07-shitstar2/) to learn how to earn Shitstars by staking your Shitzu Revival NFTs or go to our [app](https://app.shitzuapes.xyz/shitstars).
 
 Shitzurians, this is our moment. Let’s continue to build, stake, and meme our way to the top. With OGs like Illia on our side, the future looks brighter than ever.
 
