@@ -62,6 +62,8 @@ The core idea of **meme.cooking** is simple: we allow users to create and trade 
 
 7. **Refund if Unsuccessful:** If the auction doesn’t reach its 4,000 NEAR goal, don’t worry – you won’t lose anything. All participants will receive a full refund of their staked NEAR. This built-in refund mechanism is one of the ways we’re making **meme.cooking** as safe and user-friendly as possible.
 
+[refund](./thumbnail6.png.jpg)
+
 #### Closing the Presentation: What’s Next for meme.cooking?
 We wrapped up our presentation by emphasizing what’s next for **meme.cooking**. We’re currently in the **testnet** phase, which means we’re testing everything to make sure it works smoothly before we launch the mainnet. We also highlighted the upcoming beta testing program, where users can join and provide feedback in exchange for **$SHITZU** (our testnet reward token).
 
