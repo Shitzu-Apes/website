@@ -8,12 +8,15 @@ tags: [meme, meeting,launchpad]
 
 ### Meme.cooking at NEAR Town Hall: A Detailed Recap
 
-![BANNER](./photo_2024-09-12_18-28-01)
+![BANNER](./thumbnail.png)
 
 Recently, **meme.cooking** had the chance to present at the NEAR Town Hall, and it was an exciting opportunity to introduce our project to the wider NEAR community. For those who couldn’t make it, or if you just want a more detailed breakdown of our presentation, here’s everything you need to know about what we shared.
 
+![objective](./thumbnail2.png)
+
 #### Introduction to meme.cooking: Who Are We?
 We started off by giving a bit of background about **meme.cooking** and the people behind it. At its core, **meme.cooking** is a unique marketplace built on the **NEAR Protocol** that focuses on the creation, trading, and launching of meme coins.
+
 
 So, what are meme coins, and why do they matter? If you’re familiar with the world of cryptocurrency, you’ve probably seen coins like Dogecoin or Shiba Inu – these are meme coins. They’re fun, often community-driven, and can sometimes gain massive popularity due to their viral nature. However, the process of launching and trading meme coins can sometimes feel complicated, risky, or unfair, especially on traditional platforms. That’s where **meme.cooking** comes in.
 
