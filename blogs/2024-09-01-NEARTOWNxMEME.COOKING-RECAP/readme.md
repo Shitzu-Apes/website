@@ -51,7 +51,7 @@ The core idea of **meme.cooking** is simple: we allow users to create and trade 
 1. **Pick a Meme Coin:** First, you’ll browse the platform and choose a meme coin that interests you. Maybe it’s a coin related to your favorite meme, or perhaps it’s one you think has a ton of potential to go viral.
 
 2. **Join the Auction:** Once you’ve picked your coin, you’ll participate in an auction to buy it. Auctions are limited-time events where users can stake their **NEAR** tokens to purchase the coin. It’s kind of like a fundraising period – if enough people are interested and the auction hits its goal, the coin gets created and distributed to the buyers.
-
+[auction](./thumbnail5.png.jpg)
 3. **Reach the Goal:** For a coin to officially be created, the auction needs to raise at least 4,000 NEAR tokens. This ensures that there’s enough interest and backing for the coin to be viable. If the goal is reached, the coin gets launched, and everyone who participated in the auction receives their share of the tokens.
    [notreached](./thumbnail4.png)
 
