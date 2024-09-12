@@ -26,8 +26,8 @@ We’re a group of creators and developers who are passionate about both memes a
 #### What We’re Building and Why We’re Building It
 At **meme.cooking**, we’re building a platform that allows anyone to easily create, buy, and trade meme coins. But we didn’t stop there – we wanted to make sure that the platform we’re building is fair, safe, and truly community-focused.
 
-Let’s break down what makes **meme.cooking** different from the traditional crypto platforms:
-
+Let’s break down what makes **meme.cooking** different from the other memelaunchpad:
+[diff](./thumbnail10.png)
 
 1. **Fair and Transparent Process:** Many people who are new to cryptocurrency can feel left out or confused by how things work. On some platforms, you’re never really sure what’s happening behind the scenes – who’s getting the tokens, how prices are set, or what happens to your money. At **meme.cooking**, we’ve designed everything to be transparent and community-driven, so you always know what’s going on.
   
