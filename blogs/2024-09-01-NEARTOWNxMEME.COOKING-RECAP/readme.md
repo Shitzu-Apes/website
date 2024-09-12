@@ -8,6 +8,8 @@ tags: [meme, meeting,launchpad]
 
 ### Meme.cooking at NEAR Town Hall: A Detailed Recap
 
+![BANNER](./photo_2024-09-12_18-28-01)
+
 Recently, **meme.cooking** had the chance to present at the NEAR Town Hall, and it was an exciting opportunity to introduce our project to the wider NEAR community. For those who couldn’t make it, or if you just want a more detailed breakdown of our presentation, here’s everything you need to know about what we shared.
 
 #### Introduction to meme.cooking: Who Are We?
