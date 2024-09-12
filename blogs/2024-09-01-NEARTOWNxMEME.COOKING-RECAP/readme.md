@@ -19,9 +19,9 @@ We started off by giving a bit of background about **meme.cooking** and the peop
 ![goals](./thumbnail3.png)
 
 
-So, what are meme coins, and why do they matter? If you’re familiar with the world of cryptocurrency, you’ve probably seen coins like Dogecoin or Shiba Inu – these are meme coins. They’re fun, often community-driven, and can sometimes gain massive popularity due to their viral nature. However, the process of launching and trading meme coins can sometimes feel complicated, risky, or unfair, especially on traditional platforms. That’s where **meme.cooking** comes in.
+So, what are meme coins, and why do they matter? If you’re familiar with the crypto space, you’ve probably seen coins like Dogecoin or Wifhat – these are meme coins. They’re fun, often community-driven, and can sometimes gain massive popularity due to their viral nature. However, the process of launching and trading meme coins can sometimes feel complicated, risky, or unfair, especially on traditional platforms. That’s where **meme.cooking** comes in.
 
-We’re a group of creators and developers who are passionate about both memes and crypto. We wanted to build a space that’s not only fun and accessible but also designed with fairness and transparency in mind. Essentially, we’re here to make the meme coin experience as enjoyable and user-friendly as possible, while removing a lot of the risks that have historically plagued the crypto space.
+We’re a group of creators and developers at SHITZU who are passionate about both memes and our community . We wanted to build a space that’s not only fun and accessible but also designed with fairness and transparency in mind. Essentially, we’re here to make the meme coin experience as enjoyable and user-friendly as possible on NEAR Protocol, while removing a lot of the risks that have historically plagued the crypto space.
 
 #### What We’re Building and Why We’re Building It
 At **meme.cooking**, we’re building a platform that allows anyone to easily create, buy, and trade meme coins. But we didn’t stop there – we wanted to make sure that the platform we’re building is fair, safe, and truly community-focused.
@@ -29,9 +29,9 @@ At **meme.cooking**, we’re building a platform that allows anyone to easily cr
 Let’s break down what makes **meme.cooking** different from the other memelaunchpad:
 [diff](./thumbnail10.png)
 
-1. **Fair and Transparent Process:** Many people who are new to cryptocurrency can feel left out or confused by how things work. On some platforms, you’re never really sure what’s happening behind the scenes – who’s getting the tokens, how prices are set, or what happens to your money. At **meme.cooking**, we’ve designed everything to be transparent and community-driven, so you always know what’s going on.
+1. **Fair and Transparent Process:** Many people who are new to cryptocurrency can feel left out or confused by how things work. On some platforms, you’re never really sure what’s happening behind the scenes – who’s getting the tokens, how prices are set, or what happens to your money. At **meme.cooking**, we’ve designed everything to be transparent, so you always know what’s going on.
   
-2. **Unruggable:** If you’ve been around the crypto world, you’ve probably heard the term “rug pull.” This is when the creators of a project run off with the funds, leaving investors with nothing. It’s one of the biggest fears for anyone getting involved in new crypto projects. We’ve taken that risk out of the equation at **meme.cooking**. Our platform has built-in mechanisms that ensure that funds are locked and secure, making it literally unruggable. This way, users can participate confidently, knowing their money is safe.
+2. **Unruggable:** If you’ve been around the crypto space, you’ve probably heard the term “rug pull.” This is when the creators of a project run off with the funds, leaving investors with nothing. It’s one of the biggest fears for anyone getting involved in new crypto projects. We’ve taken that risk out of the equation at **meme.cooking**. Our platform has built-in mechanisms that ensure that funds are locked and secure, making it literally unruggable. This way, users can participate confidently, knowing their money is safe.
 
 3. **Refund Mechanism:** Not every project hits its funding goal, and we’ve made sure that when that happens, users don’t lose anything. If a meme coin doesn’t reach its funding target by the end of the auction, all staked funds are automatically refunded. No questions asked, no hassle – just a simple and secure way to participate without fear of losing your money.
 
@@ -64,6 +64,7 @@ The core idea of **meme.cooking** is simple: we allow users to create and trade 
 7. **Refund if Unsuccessful:** If the auction doesn’t reach its 4,000 NEAR goal, don’t worry – you won’t lose anything. All participants will receive a full refund of their staked NEAR. This built-in refund mechanism is one of the ways we’re making **meme.cooking** as safe and user-friendly as possible.
 
 [refund](./thumbnail6.png.jpg)
+
 
 #### Closing the Presentation: What’s Next for meme.cooking?
 We wrapped up our presentation by emphasizing what’s next for **meme.cooking**. We’re currently in the **testnet** phase, which means we’re testing everything to make sure it works smoothly before we launch the mainnet. We also highlighted the upcoming beta testing program, where users can join and provide feedback in exchange for **$SHITZU** (our testnet reward token).
