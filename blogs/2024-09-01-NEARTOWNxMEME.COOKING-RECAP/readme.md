@@ -28,6 +28,7 @@ At **meme.cooking**, we’re building a platform that allows anyone to easily cr
 
 Let’s break down what makes **meme.cooking** different from the traditional crypto platforms:
 
+
 1. **Fair and Transparent Process:** Many people who are new to cryptocurrency can feel left out or confused by how things work. On some platforms, you’re never really sure what’s happening behind the scenes – who’s getting the tokens, how prices are set, or what happens to your money. At **meme.cooking**, we’ve designed everything to be transparent and community-driven, so you always know what’s going on.
   
 2. **Unruggable:** If you’ve been around the crypto world, you’ve probably heard the term “rug pull.” This is when the creators of a project run off with the funds, leaving investors with nothing. It’s one of the biggest fears for anyone getting involved in new crypto projects. We’ve taken that risk out of the equation at **meme.cooking**. Our platform has built-in mechanisms that ensure that funds are locked and secure, making it literally unruggable. This way, users can participate confidently, knowing their money is safe.
