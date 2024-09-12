@@ -19,7 +19,7 @@ We started off by giving a bit of background about **meme.cooking** and the peop
 ![goals](./thumbnail3.png)
 
 
-So, what are meme coins, and why do they matter? If you’re familiar with the world of cryptocurrency, you’ve probably seen coins like Dogecoin or Shiba Inu – these are meme coins. They’re fun, often community-driven, and can sometimes gain massive popularity due to their viral nature. However, the process of launching and trading meme coins can sometimes feel complicated, risky, or unfair, especially on traditional platforms. That’s where **meme.cooking** comes in.
+So, what are meme coins, and why do they matter? If you’re familiar with the crypto space, you’ve probably seen coins like Dogecoin or Shiba Inu – these are meme coins. They’re fun, often community-driven, and can sometimes gain massive popularity due to their viral nature. However, the process of launching and trading meme coins can sometimes feel complicated, risky, or unfair, especially on traditional platforms. That’s where **meme.cooking** comes in.
 
 We’re a group of creators and developers who are passionate about both memes and crypto. We wanted to build a space that’s not only fun and accessible but also designed with fairness and transparency in mind. Essentially, we’re here to make the meme coin experience as enjoyable and user-friendly as possible, while removing a lot of the risks that have historically plagued the crypto space.
 
