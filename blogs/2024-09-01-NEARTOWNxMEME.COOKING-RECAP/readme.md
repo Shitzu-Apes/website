@@ -16,6 +16,7 @@ Recently, **meme.cooking** had the chance to present at the NEAR Town Hall, and 
 
 #### Introduction to meme.cooking: Who Are We?
 We started off by giving a bit of background about **meme.cooking** and the people behind it. At its core, **meme.cooking** is a unique marketplace built on the **NEAR Protocol** that focuses on the creation, trading, and launching of meme coins.
+![goals](./thumbnail3.png)
 
 
 So, what are meme coins, and why do they matter? If you’re familiar with the world of cryptocurrency, you’ve probably seen coins like Dogecoin or Shiba Inu – these are meme coins. They’re fun, often community-driven, and can sometimes gain massive popularity due to their viral nature. However, the process of launching and trading meme coins can sometimes feel complicated, risky, or unfair, especially on traditional platforms. That’s where **meme.cooking** comes in.
@@ -52,12 +53,14 @@ The core idea of **meme.cooking** is simple: we allow users to create and trade 
 2. **Join the Auction:** Once you’ve picked your coin, you’ll participate in an auction to buy it. Auctions are limited-time events where users can stake their **NEAR** tokens to purchase the coin. It’s kind of like a fundraising period – if enough people are interested and the auction hits its goal, the coin gets created and distributed to the buyers.
 
 3. **Reach the Goal:** For a coin to officially be created, the auction needs to raise at least 4,000 NEAR tokens. This ensures that there’s enough interest and backing for the coin to be viable. If the goal is reached, the coin gets launched, and everyone who participated in the auction receives their share of the tokens.
+   [notreached](./thumbnail4.png)
 
-4. **Fair Distribution:** Once the coin is live, the tokens are distributed in a fair and transparent way. There’s no insider advantage or manipulation – everyone who staked their NEAR in the auction gets their fair share of the tokens based on how much they contributed.
 
-5. **Liquidity Provision:** This is where things get even more interesting. Half of the newly created token supply, along with all the staked NEAR, is automatically deposited into **Ref Finance** (a popular decentralized exchange on the NEAR Protocol) to create liquidity. This helps ensure that there’s always a healthy market for trading the coin. Additionally, 50% of the tokens are burned, making the remaining supply even more valuable.
+5. **Fair Distribution:** Once the coin is live, the tokens are distributed in a fair and transparent way. There’s no insider advantage or manipulation – everyone who staked their NEAR in the auction gets their fair share of the tokens based on how much they contributed.
 
-6. **Refund if Unsuccessful:** If the auction doesn’t reach its 4,000 NEAR goal, don’t worry – you won’t lose anything. All participants will receive a full refund of their staked NEAR. This built-in refund mechanism is one of the ways we’re making **meme.cooking** as safe and user-friendly as possible.
+6. **Liquidity Provision:** This is where things get even more interesting. Half of the newly created token supply, along with all the staked NEAR, is automatically deposited into **Ref Finance** (a popular decentralized exchange on the NEAR Protocol) to create liquidity. This helps ensure that there’s always a healthy market for trading the coin. Additionally, 50% of the tokens are burned, making the remaining supply even more valuable.
+
+7. **Refund if Unsuccessful:** If the auction doesn’t reach its 4,000 NEAR goal, don’t worry – you won’t lose anything. All participants will receive a full refund of their staked NEAR. This built-in refund mechanism is one of the ways we’re making **meme.cooking** as safe and user-friendly as possible.
 
 #### Closing the Presentation: What’s Next for meme.cooking?
 We wrapped up our presentation by emphasizing what’s next for **meme.cooking**. We’re currently in the **testnet** phase, which means we’re testing everything to make sure it works smoothly before we launch the mainnet. We also highlighted the upcoming beta testing program, where users can join and provide feedback in exchange for **$SHITZU** (our testnet reward token).
