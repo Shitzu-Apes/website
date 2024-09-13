@@ -57,7 +57,7 @@ The core idea of **meme.cooking** is simple: we allow users to create and trade 
 2. **Join the Auction:** Once you’ve picked your coin, you’ll participate in an auction to buy it. Auctions are limited-time events where users can stake their **NEAR** tokens to purchase the coin. It’s kind of like a fundraising period – if enough people are interested and the auction hits its goal, the coin gets created and distributed to the buyers.
    ![auction](./thumbnail5.png)
 3. **Reach the Goal:** For a coin to officially be created, the auction needs to raise at least 4,000 NEAR tokens. This ensures that there’s enough interest and backing for the coin to be viable. If the goal is reached, the coin gets launched, and everyone who participated in the auction receives their share of the tokens.
-   [notreached](./thumbnail4.png)
+   ![notreached](./thumbnail4.png)
 
 4. **Fair Distribution:** Once the coin is live, the tokens are distributed in a fair and transparent way. There’s no insider advantage or manipulation – everyone who staked their NEAR in the auction gets their fair share of the tokens based on how much they contributed.
 
@@ -74,3 +74,5 @@ We wrapped up our presentation by emphasizing what’s next for **meme.cooking**
 As we gear up for the mainnet launch, we want the community to know that **meme.cooking** is here to stay. Our mission is to create a safe, fair, and fun space for meme coin enthusiasts. Whether you’re here to trade, launch a coin, or just enjoy the memes, we’ve got something for you.
 
 So, stay tuned – the kitchen’s heating up, and we can’t wait to show you what we’ve been cooking!
+
+- [link to the event](https://www.youtube.com/live/luVCgkCyjlM?feature=shared)
