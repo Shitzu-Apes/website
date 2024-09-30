@@ -12,8 +12,9 @@ tags: [launch, memecoins, NEAR, community, auction]
 **Introduction:**  
 The wait is over! **meme.cooking** has officially launched, and we’re thrilled to introduce this game-changing platform to the NEAR Protocol community. After months of hard work, rigorous testing, and valuable feedback from our beta testers, meme.cooking is live and ready to disrupt the memecoin space. Whether you're a memecoin enthusiast, an investor, or someone new to the world of crypto, meme.cooking offers a fair, fun, and secure way to trade and launch memecoins.
 
+![LAUNCH](./meme.cooking0001.png)
 **What is meme.cooking?**  
-meme.cooking is a memecoin launchpad built on NEAR Protocol, designed to make memecoin launches and trading safe, fair, and transparent. With a focus on community participation and security, we’ve created a platform where users can stake NEAR to support new projects and participate in auctions that give memecoins a fair start.
+meme.cooking is a memecoin launchpad built on NEAR Protocol and backed by Shitzu, designed to make memecoin launches and trading safe, fair, and transparent. With a focus on community participation and security, we’ve created a platform where users can stake NEAR to support new projects and participate in auctions that give memecoins a fair start.
 
 Our approach is simple: if a coin reaches its auction goal, it’s launched and distributed fairly among the backers. If the goal isn’t met, participants receive a full refund, ensuring zero risk. This model, combined with locked liquidity for eight years, ensures that meme.cooking launches are unriggable and safe for all users.
 
@@ -36,6 +37,7 @@ Now that meme.cooking is live, you can dive right into the action. Here’s how 
 
 **A Big Thanks to Our Beta Chefs**  
 To our beta testers, we couldn’t have done it without you! Your feedback and participation helped shape meme.cooking into the platform it is today.
+
 **The Future of meme.cooking**  
 With meme.cooking now live, we’re just getting started. Stay tuned for more updates as we continue to roll out exciting new features and enhancements. Our vision is to become the go-to platform for memecoin launches, bringing fairness and fun to the world of crypto.
 
