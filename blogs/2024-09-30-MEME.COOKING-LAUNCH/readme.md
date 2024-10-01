@@ -1,6 +1,6 @@
 ---
 date: 2024-09-30
-title: Meme.Mooking Launch A New Era for Meme tokens on NEAR
+title: Meme.Cooking Launch A New Era for Meme tokens on NEAR
 description: This blog post announces the official launch of Meme.Cooking, a groundbreaking meme token launchpad on NEAR Protocol. It highlights the platform’s mission to revolutionize meme token trading by offering a fair, secure, and community-driven experience. 
 author: Skytonet
 tags: [launch, launchpad, meme, token, memecoin, memetokens, NEAR, community, auction]
