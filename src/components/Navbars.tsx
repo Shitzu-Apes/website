@@ -20,7 +20,7 @@ const navigation = [
   { name: "Blog", href: "/blog", current: false },
   { name: "FAQ", href: "/#FAQ", current: false },
   { name: "App", href: "https://app.shitzuapes.xyz", current: false },
-  { name: "Token Farm", href: "https://tkn.shitzuapes.xyz", current: false },
+  { name: "Meme.Cooking", href: "https://meme.cooking", current: false },
 ];
 
 function classNames(...classes: string[]) {

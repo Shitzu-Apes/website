@@ -1,6 +1,7 @@
 import FAQ from "@/components/FAQ";
 import Hero from "@/components/Hero";
 import LandingBlog from "@/components/LandingBlog";
+import MemeCooking from "@/components/MemeCooking";
 import ShitzuRevival from "@/components/ShitzuRevival";
 import TokenFarm from "@/components/TokenFarm";
 import Tokenomics from "@/components/Tokenomics";
@@ -35,6 +36,9 @@ export default async function Home() {
 
       <div className="w-full">
         <Tokenomics />
+      </div>
+      <div className="w-full">
+        <MemeCooking />
       </div>
       <div className="w-full">
         <ShitzuRevival />
