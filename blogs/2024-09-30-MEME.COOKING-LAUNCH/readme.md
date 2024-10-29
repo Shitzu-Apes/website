@@ -6,12 +6,11 @@ author: Skytonet
 tags: [launch, launchpad, meme, token, memecoin, memetokens, NEAR, community, auction]
 ---
 
+![logo](./thumbnail.png)
 
 ### Meme.Cooking Launches Today: A New Era for Meme tokens on NEAR**
 
 The wait is over! [**Meme.Cooking**](https://meme.cooking) has officially launched, and we’re thrilled to introduce this game-changing platform to the NEAR Protocol community. After months of hard work, rigorous testing, and valuable feedback from our beta testers, Meme.Cooking is live and ready to disrupt the meme token space. Whether you're a meme token enthusiast, an investor, or someone new to the world of crypto, Meme.Cooking offers a fair, fun, and secure way to trade and launch meme tokens.
-
-![LAUNCH](./meme.cooking0001.png)
 
 #### What is Meme.Cooking?
 
