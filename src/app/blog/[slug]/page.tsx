@@ -4,7 +4,6 @@ import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkFrontmatter from "remark-frontmatter";
 import mdnameUtils from "@/utils/mdname";
-import mime from "mime";
 import Breadcrumbs from "@/components/BreadCrumbs";
 import { Metadata, ResolvingMetadata } from "next";
 import toDataURL from "@/utils/toDataURL";
@@ -90,6 +89,11 @@ export default async function BlogPage({
               // @ts-ignore
               return <video {...props} src={dataURL} controls />;
             } else {
+              // Handle external images that start with http/https
+              if (props.src?.startsWith("http")) {
+                return <img {...props} />;
+              }
+              // Handle local images
               readFileSync(`./blogs/${slug}/${props.src}`, "utf-8");
               const dataURL = toDataURL(`./blogs/${slug}/${props.src}`);
               return <img {...props} src={dataURL} />;
@@ -112,6 +116,32 @@ export default async function BlogPage({
               <a {...props} href={`/${href}`}>
                 {props.children}
               </a>
+            );
+          },
+          table: ({ node, ...props }) => {
+            return (
+              <div className="overflow-x-auto">
+                <table
+                  {...props}
+                  className="min-w-full divide-y divide-gray-700 border-collapse bg-shitzu/20"
+                />
+              </div>
+            );
+          },
+          th: ({ node, ...props }) => {
+            return (
+              <th
+                {...props}
+                className="px-4 py-4 text-left text-sm font-bold bg-primary"
+              />
+            );
+          },
+          td: ({ node, ...props }) => {
+            return (
+              <td
+                {...props}
+                className="whitespace-nowrap px-4 py-4 text-sm hover:bg-shitzu/10 transition-colors"
+              />
             );
           },
         }}
