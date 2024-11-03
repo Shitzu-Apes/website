@@ -28,7 +28,7 @@ Relevant contracts and affiliated Shitzu accounts:
 | | Worker | [https://pikespeak.ai/wallet-explorer/shitzu.marior.near/global](https://pikespeak.ai/wallet-explorer/shitzu.marior.near/global) |
 | | Proposals | [https://dev.near.org/astraplusplus.ndctools.near/widget/home?tab=proposals&daoId=shitzu.sputnik-dao.near&page=dao](https://dev.near.org/astraplusplus.ndctools.near/widget/home?tab=proposals&daoId=shitzu.sputnik-dao.near&page=dao) |
 
-> :memo: **Note:** Our offerings provide exposure to a diverse range of memecoins. Nevertheless, we exclusively endorse and are affiliated with the official contract addresses outlined in this reference guide.
+> 📝  **Note:** Our offerings provide exposure to a diverse range of memecoins. Nevertheless, we exclusively endorse and are affiliated with the official contract addresses outlined in this reference guide.
 
 ### 2. Relevant links
 
@@ -54,14 +54,13 @@ A list of relevant links and endorsed endpoints:
 | | Deposit collector | [https://near.social/marior.near/widget/StorageFreeing](https://near.social/marior.near/widget/StorageFreeing) |
 | API's | Meme.cooking | [https://api.meme.cooking](https://api.meme.cooking) |
 | | RPC | [https://rpc.shitzuapes.xyz](https://rpc.shitzuapes.xyz) |
-| Markets | Buy | [https://app.ref.finance/#near|token.0xshitzu.near](https://app.ref.finance/#near|token.0xshitzu.near) |
+| Markets | Buy | [https://app.ref.finance/#near\|token.0xshitzu.near](https://app.ref.finance/#near\|token.0xshitzu.near) |
 | | Farms | [https://app.ref.finance/v2farms/4369-r](https://app.ref.finance/v2farms/4369-r) |
 | | Liquidity | [https://app.ref.finance/pool/4369](https://app.ref.finance/pool/4369) |
 | | | [https://app.ref.finance/pool/5472](https://app.ref.finance/pool/5472) |
 | | Meme season | [https://app.ref.finance/meme](https://app.ref.finance/meme) |
 | | Pairs | [https://www.dextools.io/app/en/near/pair-explorer/4369?t=1730302104653](https://www.dextools.io/app/en/near/pair-explorer/4369?t=1730302104653) |
 | | | [https://dexscreener.com/near/refv1-4369](https://dexscreener.com/near/refv1-4369) |
-| | | [https://www.coingecko.com/en/coins/shitzu](https://www.coingecko.com/en/coins/shitzu) |
 | | | [https://www.coingecko.com/en/coins/shitzu](https://www.coingecko.com/en/coins/shitzu) |
 | | Bots | [https://www.deltatrade.ai/bots/grid/vaults/SHITZU_USDC](https://www.deltatrade.ai/bots/grid/vaults/SHITZU_USDC) |
 | | | [https://www.deltatrade.ai/bots/dca/vaults/SHITZU_NEAR](https://www.deltatrade.ai/bots/dca/vaults/SHITZU_NEAR) |
@@ -73,7 +72,7 @@ A list of relevant links and endorsed endpoints:
 | | Stats | [https://plausible.io/app.shitzuapes.xyz](https://plausible.io/app.shitzuapes.xyz) |
 | | HOT shitzu village | [https://t.me/herewalletbot/app?startapp=village13999](https://t.me/herewalletbot/app?startapp=village13999) |
 
-> :warning: **Warning:** To mitigate risks, it is imperative to validate the authenticity of applications and platforms via authorized sources. Our applications and services require solely a restricted `FunctionCall` access key. A `FullAccess` key is **never** required.
+> ⚠️ **Warning:** To mitigate risks, it is imperative to validate the authenticity of applications and platforms via authorized sources. Our applications and services require solely a restricted FunctionCall access key. A FullAccess key is **never** required.
 
 ### 3. Shitstars - GM NFT game
 
@@ -99,7 +98,7 @@ A list of relevant links and endorsed endpoints:
 |              | ![Shitstar 13](https://image-cache-service-z3w7d7dnea-ew.a.run.app/small?url=https://arweave.net/R_9_BDZZF9SDBF-gZwKur3HctakvcrTJ0LPVoER7HyY)       | [https://wallet.bitte.ai/claim/motinha-9⁰-shitstars--by-evandrozec.near:90883](https://wallet.bitte.ai/claim/motinha-9⁰-shitstars--by-evandrozec.near:90883)                               |
 | #69          | ![Shitstar 69](https://image-cache-service-z3w7d7dnea-ew.a.run.app/small?url=https://arweave.net/uAAIYARq9k2YCAYiu7XJjk-hGge4jKT_SrzhR9ZXcAc)       | [https://wallet.bitte.ai/claim/shitstars-69⁰-by-evandrozec.near:79376](https://wallet.bitte.ai/claim/shitstars-69⁰-by-evandrozec.near:79376)                                               |
 
-> :bulb: **Tip:** Remember to say 'GM' once in a while on TG and get rewarded in $SHITZU + $SHITSTARS💩
+> 💡  **Tip:** Remember to say 'GM' once in a while on TG and get rewarded in $SHITZU + $SHITSTARS💩
 
 ### 4. Sharddogs
 
