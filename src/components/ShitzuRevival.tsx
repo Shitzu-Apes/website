@@ -33,10 +33,9 @@ const NFT_LINKS = [
 
 export default function ShitzuRevival() {
   return (
-    <div className="w-full bg-primary py-10">
+    <div className="w-full bg-[#32B37D] py-10">
       <div className="w-full max-w-landing mx-auto h-full flex flex-col sm:flex-row items-center justify-center">
-        <div
-          className="w-full sm:w-1/2 h-[500px] bg-no-repeat bg-center object-contain"
+        <div className="w-full sm:w-1/2 h-[500px] bg-no-repeat bg-center object-contain"
           style={{ backgroundImage: `url(${ShitzuFace.src})` }}
         ></div>
         <div className="w-full sm:w-1/2 px-5 sm:pr-10">
@@ -65,7 +64,7 @@ export default function ShitzuRevival() {
                 return (
                   <a
                     key={link}
-                    className="mt-0 sm:mt-6 cursor-pointer rounded-lg w-full sm:w-[40%] text-center bg-black px-3 py-2 text-lg font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:bg-primary-light"
+                    className="mt-0 sm:mt-6 cursor-pointer rounded-lg w-full sm:w-[40%] text-center bg-black px-3 py-2 text-lg font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:bg-gray-800"
                     href={link}
                     target="_blank"
                     rel="noreferrer"

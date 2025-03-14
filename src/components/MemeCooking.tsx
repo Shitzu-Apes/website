@@ -4,7 +4,7 @@ import MemeCookingBanner from "@/assets/MemeCooking.png"; // Assuming you have t
 
 export default function MemeCooking() {
   return (
-    <div className="w-full bg-primary py-10">
+    <div className="w-full bg-[#45EBA5] py-10">
       <div className="w-full max-w-landing mx-auto h-full flex flex-col sm:flex-row items-center justify-center">
         <div className="w-full sm:w-1/2 px-5 sm:pr-10">
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl text-gray-900">
@@ -34,7 +34,7 @@ export default function MemeCooking() {
           <img
             src={MemeCookingBanner.src}
             alt="Meme.Cooking Banner"
-            className="w-full h-auto rounded-lg border-4 border-emerald-950"
+            className="w-full h-auto rounded-lg border-4 border-[#32B37D]"
           />
         </div>
       </div>

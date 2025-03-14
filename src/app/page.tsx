@@ -5,6 +5,7 @@ import MemeCooking from "@/components/MemeCooking";
 import ShitzuRevival from "@/components/ShitzuRevival";
 import TokenFarm from "@/components/TokenFarm";
 import Tokenomics from "@/components/Tokenomics";
+import EcosystemMap from "@/components/EcosystemMap";
 import { BlogMetadata } from "@/utils/blog";
 import { readFrontmatter } from "@/utils/markdown";
 import { readdirSync } from "fs";
@@ -42,6 +43,9 @@ export default async function Home() {
       </div>
       <div className="w-full">
         <ShitzuRevival />
+      </div>
+      <div className="w-full">
+        <EcosystemMap />
       </div>
       <div className="w-full">
         <TokenFarm />
