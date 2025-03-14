@@ -1,10 +1,18 @@
-import ShitzuFarm from "@/assets/tokenfarm.png";
+import ShitzuFarm from "@/assets/tokenfarm.webp";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 export default function TokenFarm() {
   return (
     <div className="w-full bg-[#32B37D] py-10">
-      <div className="w-full h-full max-w-landing mx-auto flex flex-col-reverse sm:flex-row items-center justify-center">
+      <div className="w-full h-full max-w-landing mx-auto flex flex-col sm:flex-row items-center justify-center">
+        <div className="w-full sm:w-1/2 h-full mx-5 px-5 md:px-0">
+          <img
+            className="rounded-lg border-white border-4"
+            src={ShitzuFarm.src}
+            alt="Shitzu Farm"
+          />
+        </div>
+
         <div className="w-full sm:w-1/2 px-5 sm:pl-10 mt-10 sm:mt-0">
           <h2 className="text-2xl font-bold tracking-tight sm:text-5xl text-gray-900">
             SHITZU Token Farm
@@ -30,14 +38,6 @@ export default function TokenFarm() {
               </a>
             </div>
           </div>
-        </div>
-
-        <div className="w-full sm:w-1/2 h-full mx-5 px-5 md:px-0">
-          <img
-            className="rounded-lg border-white border-4"
-            src={ShitzuFarm.src}
-            alt="Shitzu Farm"
-          />
         </div>
       </div>
     </div>
