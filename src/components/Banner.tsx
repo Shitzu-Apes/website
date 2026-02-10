@@ -37,7 +37,7 @@ export default function Banner() {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          Once Aurora's unique meme token, now also shining on Near!
+          Once Aurora’s unique meme token, now also shining on Near!
         </p>
         <a
           href="https://near.org/marior.near/widget/ShitzuMigrate"

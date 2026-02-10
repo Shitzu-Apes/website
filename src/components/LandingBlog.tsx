@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function LandingBlog({ blogs }: { blogs: TBlogMetadata[] }) {
   return (
-    <div className="bg-primary py-24 sm:py-32">
-      <div className="w-full max-w-landing mx-auto px-5 sm:px-10">
+    <div className="section bg-primary">
+      <div className="section-inner">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             From the blog
@@ -42,8 +42,8 @@ export default function LandingBlog({ blogs }: { blogs: TBlogMetadata[] }) {
           ))}
         </div>
         <div className="mt-10 flex items-center">
-          <Link href="/blog" className="ml-auto">
-            Read more...
+          <Link href="/blog" className="btn-outline btn-sm ml-auto">
+            Read more →
           </Link>
         </div>
       </div>

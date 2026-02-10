@@ -2,6 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .section {
+    @apply w-full py-14 sm:py-20;
+  }
+
+  .section-inner {
+    @apply mx-auto w-full max-w-landing px-5 sm:px-10;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl;
+  }
+
+  .section-lead {
+    @apply mt-6 text-base leading-7 text-gray-900/80 sm:text-lg;
+  }
+
+  .card {
+    @apply rounded-2xl border border-black/10 bg-white/60 shadow-sm backdrop-blur;
+  }
+
+  .media-frame {
+    @apply overflow-hidden rounded-2xl border border-black/10 bg-black/5 shadow-sm;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+  }
+
+  .btn-sm {
+    @apply px-4 py-2 text-sm;
+  }
+
+  .btn-lg {
+    @apply px-7 py-4 text-lg;
+  }
+
+  .btn-primary {
+    @apply btn bg-black text-white hover:bg-gray-900 focus-visible:outline-black;
+  }
+
+  .btn-accent {
+    @apply btn bg-primary text-black hover:bg-primary-light focus-visible:outline-primary;
+  }
+
+  .btn-outline {
+    @apply btn border border-black/15 bg-white/60 text-gray-900 hover:bg-white focus-visible:outline-black;
+  }
+
+  .btn-outline-primary {
+    @apply btn border border-primary text-white hover:bg-primary focus-visible:outline-primary;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

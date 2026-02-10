@@ -15,7 +15,7 @@ export default function ChainTab() {
       <div className="flex flex-col md:flex-row items-stretch md:items-center mb-4 gap-3 w-full">
         <Clipboard value="token.0xshitzu.near" />
         <a
-          className="w-full md:max-w-36 relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
+          className="btn-outline-primary btn-sm w-full md:max-w-36 relative font-mono"
           href="https://nearblocks.io/token/token.0xshitzu.near"
           target="_blank"
           rel="noreferrer"
@@ -30,21 +30,21 @@ export default function ChainTab() {
       </div>
       <div className="flex flex-col md:flex-row items-stretch md:items-center mb-4 gap-3">
         <a
-          className="w-full md:w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
-          href="https://app.ref.finance/#token.0xshitzu.near|near"
+          className="btn-outline-primary btn-sm w-full md:w-fit relative font-mono"
+          href="https://x.rhea.finance/trade"
           target="_blank"
           rel="noreferrer"
         >
-          BUY on
+          <span className="whitespace-nowrap">Buy on</span>
           <img
             src={RefFinanceLogo.src}
-            alt="Ref Finance Logo"
+            alt="Rhea Finance Logo"
             className="h-6 mx-1 w-auto rounded-full"
           />
-          Ref Finance
+          <span className="whitespace-nowrap">Rhea Finance</span>
         </a>
         <a
-          className="w-full md:w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
+          className="btn-outline-primary btn-sm w-full md:w-fit relative font-mono"
           href="https://dexscreener.com/near/refv1-4369"
           target="_blank"
           rel="noreferrer"
@@ -58,7 +58,7 @@ export default function ChainTab() {
         </a>
         <a
           href="https://www.dextools.io/app/en/near/pair-explorer/4369"
-          className="w-full md:w-fit relative py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-mono rounded-lg border text-white border-primary hover:bg-primary"
+          className="btn-outline-primary btn-sm w-full md:w-fit relative font-mono"
           target="_blank"
           rel="noreferrer"
         >

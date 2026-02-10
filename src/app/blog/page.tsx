@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync } from "fs";
+import { readdirSync } from "fs";
 
 import { BlogMetadata } from "@/utils/blog";
 import { readFrontmatter } from "@/utils/markdown";
@@ -6,80 +6,101 @@ import Link from "next/link";
 import toDataURL from "@/utils/toDataURL";
 
 export default async function BlogPage() {
-  let files = readdirSync("./blogs", { withFileTypes: true });
+  let blogDirs = readdirSync("./blogs", { withFileTypes: true });
 
-  files.sort((a, b) => {
+  blogDirs.sort((a, b) => {
     return b.name.localeCompare(a.name);
   });
 
   const blogs = [];
-  for await (const file of files) {
-    const frontmatter = await readFrontmatter(`./blogs/${file.name}/readme.md`);
+  for await (const dir of blogDirs) {
+    const frontmatter = await readFrontmatter(`./blogs/${dir.name}/readme.md`);
 
     // find thumbnail.* in the blog folder
-    const files = readdirSync(`./blogs/${file.name}`);
-    const thumbnail = files.find((file) => file.startsWith("thumbnail"));
+    const dirFiles = readdirSync(`./blogs/${dir.name}`);
+    const thumbnail = dirFiles.find((file) => file.startsWith("thumbnail"));
 
     // if thumbnail exists, read and convert it to base64
     let thumbnailBase64 = thumbnail
-      ? toDataURL(`./blogs/${file.name}/${thumbnail}`)
+      ? toDataURL(`./blogs/${dir.name}/${thumbnail}`)
       : "";
 
     const metadata = BlogMetadata.parse({
       ...(frontmatter.data.matter as Object),
-      slug: file.name,
+      slug: dir.name,
       thumbnail: thumbnailBase64,
     });
     blogs.push(metadata);
   }
 
   return (
-    <div className="bg-primary-light py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 min-h-[100vh]">
-        <div className="mx-auto max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            From the blog
-          </h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
-            Discover the latest news and updates from our OGs.
+    <div className="min-h-[100vh] bg-primary-light">
+      <div className="mx-auto w-full max-w-landing px-5 py-14 sm:py-20">
+        <div className="max-w-2xl">
+          <p className="text-sm font-mono text-gray-900/80">SHITZU Blog</p>
+          <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            News, updates, and stories
+          </h1>
+          <p className="mt-4 text-base leading-7 text-gray-900/70">
+            Discover the latest posts from the community and the team.
           </p>
-          <div className="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
-            {blogs.map((blog) => (
-              <Link
-                href={`/blog/${blog.slug}`}
-                key={blog.title}
-                className="relative isolate flex flex-col gap-8 lg:flex-row"
-              >
-                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-12 md:grid-cols-2 lg:grid-cols-3">
+          {blogs.map((blog) => (
+            <Link
+              href={`/blog/${blog.slug}`}
+              key={blog.slug}
+              className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white/60 shadow-sm backdrop-blur transition hover:border-black/20 hover:bg-white/80 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              <div className="relative aspect-[16/9] w-full overflow-hidden bg-black/5">
+                {blog.thumbnail ? (
                   <img
                     src={blog.thumbnail}
-                    alt=""
-                    className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+                    alt={blog.title}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                   />
-                  <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-                </div>
-                <div>
-                  <div className="flex items-center gap-x-4 text-xs">
-                    <time dateTime={blog.date} className="text-gray-500">
-                      {blog.date}
-                    </time>
-                    <div className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                      {blog.tags[0]}
-                    </div>
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-black/10 to-black/0 text-sm text-gray-900/60">
+                    No thumbnail
                   </div>
-                  <div className="group relative max-w-xl">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                      <span className="absolute inset-0" />
-                      {blog.title}
-                    </h3>
-                    <p className="mt-5 text-sm leading-6 text-gray-600">
-                      {blog.description}
-                    </p>
+                )}
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/0 to-black/0" />
+              </div>
+
+              <div className="flex h-full flex-col p-5">
+                <div className="flex items-start justify-between gap-3">
+                  <time
+                    dateTime={blog.date}
+                    className="text-xs font-mono text-gray-900/60"
+                  >
+                    {blog.date}
+                  </time>
+                  <div className="flex flex-wrap justify-end gap-2">
+                    {blog.tags.slice(0, 2).map((tag) => (
+                      <span
+                        key={`${blog.slug}-${tag}`}
+                        className="rounded-full border border-black/10 bg-black/5 px-2.5 py-1 text-[11px] font-medium text-gray-900/70"
+                      >
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                 </div>
-              </Link>
-            ))}
-          </div>
+
+                <h2 className="mt-3 text-lg font-semibold leading-snug text-gray-900 transition-colors group-hover:text-black">
+                  {blog.title}
+                </h2>
+                <p className="mt-2 text-sm leading-6 text-gray-900/70">
+                  {blog.description}
+                </p>
+
+                <div className="mt-5 text-sm font-mono text-gray-900/80">
+                  Read →
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

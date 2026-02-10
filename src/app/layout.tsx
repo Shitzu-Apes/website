@@ -13,8 +13,23 @@ import BottomBanner from "@/components/BottomBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 
+function getMetadataBase(): URL | undefined {
+  const raw = process.env.METADATABASE?.trim();
+  // Avoid common “set-but-invalid” values (e.g. METADATABASE=undefined)
+  if (!raw || raw.toLowerCase() === "undefined" || raw.toLowerCase() === "null") {
+    return undefined;
+  }
+  try {
+    return new URL(raw);
+  } catch {
+    return undefined;
+  }
+}
+
+const metadataBase = getMetadataBase();
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.METADATABASE!),
+  ...(metadataBase ? { metadataBase } : {}),
   title: "SHITZU - 306,242,069",
   description:
     "Being born on April Fool's, $SHITZU keeps it foolishly simple: 576,167,000 tokens, period. All circulating, no lock-ups, no vesting.",

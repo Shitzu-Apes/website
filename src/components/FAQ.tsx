@@ -7,32 +7,32 @@ const faqs = [
   {
     question: "What is $SHITZU?",
     answer:
-      "SHITZU is the quirky memecoin born from an April Fool's Day prank gone fabulously right. Picture this: a hidden mint button, a ticking clock of 24 hours, and a frenzy of clicks leading to the minting of exactly 576,167,000 SHITZU tokens. Dubbed the 'proof of finger', this one-time-only minting spree makes SHITZU a uniquely finite bundle of digital fun. No more minting, just the joy of being part of the SHITZU saga!",
+      "SHITZU is the quirky memecoin born from an April Fool's Day prank gone fabulously right. Picture this: a hidden mint button, a ticking clock of 24 hours, and a frenzy of clicks leading to the minting of exactly 576,167,000 SHITZU tokens. Dubbed the “proof of finger”, this one-time-only minting spree makes SHITZU a uniquely finite bundle of digital fun. No more minting, just the joy of being part of the SHITZU saga!",
   },
   {
     question: "Why join SHITZU Community?",
     answer: (
-      <div>
-        Step into a community teaming with NEAR OGs, Developers, Artists,
-        Marketers, Content creators, and Investors. Don't be surprised to find
-        NEAR project founders casually engaging on our Telegram channel. We take
-        pride in spotlighting projects shaping the NEAR/Aurora ecosystem. Engage
-        in our community Crossword Puzzles, where partnering projects take the
-        center stage. From compelling tweets to insightful threads, we
-        supplement our content to keep you informed. Join our Twitter spaces to
-        showcase your incredible projects, and as a member, be rewarded in
-        $SHITZU & NEAR tokens for active participation. <br />
-        <br />
-        Embark on a journey where innovation meets community, and every member
-        is a valued contributor. <br />
-        <br />
-        Join $SHITZU and be part of something extraordinary in the NEAR & Aurora
-        universe.,
+      <div className="space-y-3">
+        <p>
+          Step into a community packed with NEAR OGs, developers, artists,
+          marketers, creators, and investors — including NEAR project founders
+          who regularly hang out in our chats.
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Discover projects shaping the NEAR / Aurora ecosystem</li>
+          <li>Join community games like Crossword Puzzles</li>
+          <li>Follow updates via tweets, threads, and Twitter Spaces</li>
+          <li>Earn $SHITZU &amp; NEAR rewards for active participation</li>
+        </ul>
+        <p>
+          Join $SHITZU and be part of something extraordinary in the NEAR &amp;
+          Aurora universe.
+        </p>
       </div>
     ),
   },
   {
-    question: "Who run the Shitzu Community?",
+    question: "Who runs the Shitzu Community?",
     answer:
       "You! It's a place where everyone has a voice and the power to steer the journey.",
   },
@@ -43,55 +43,68 @@ const faqs = [
   },
   {
     question: "How can I contribute to the Shitzu Community?",
-    answer: "Join us on Telegram, Twitter, and Github.",
+    answer: "Join us on Telegram, X, and GitHub — and help shape what we build.",
   },
 ];
 
 export default function FAQ() {
   return (
-    <div className="bg-gray-900">
-      <div className="mx-auto max-w-landing px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
-        <div className="mx-auto max-w-landing divide-y divide-white/10">
-          <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">
+    <section className="section bg-gray-900">
+      <div className="section-inner">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Frequently asked questions
           </h2>
-          <dl className="mt-10 space-y-6 divide-y divide-white/10">
+          <p className="mt-3 text-base leading-7 text-white/70">
+            Quick answers to the most common questions. If you’re stuck, reach
+            out — we’re active daily.
+          </p>
+
+          <dl className="mt-10 space-y-4">
             {faqs.map((faq) => (
-              <Disclosure as="div" key={faq.question} className="pt-6">
+              <Disclosure as="div" key={faq.question} className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 shadow-sm hover:bg-white/10">
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-white">
+                      <Disclosure.Button className="flex w-full items-start justify-between gap-6 text-left text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
                         <span className="text-base font-semibold leading-7">
                           {faq.question}
                         </span>
-                        <span className="ml-6 flex h-7 items-center">
+                        <span className="mt-0.5 flex h-7 items-center text-white/80">
                           {open ? (
-                            <MinusSmallIcon
-                              className="h-6 w-6"
-                              aria-hidden="true"
-                            />
+                            <MinusSmallIcon className="h-6 w-6" aria-hidden="true" />
                           ) : (
-                            <PlusSmallIcon
-                              className="h-6 w-6"
-                              aria-hidden="true"
-                            />
+                            <PlusSmallIcon className="h-6 w-6" aria-hidden="true" />
                           )}
                         </span>
                       </Disclosure.Button>
                     </dt>
-                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base leading-7 text-gray-300">
+                    <Disclosure.Panel as="dd" className="mt-3">
+                      <div className="text-base leading-7 text-white/70">
                         {faq.answer}
-                      </p>
+                      </div>
                     </Disclosure.Panel>
                   </>
                 )}
               </Disclosure>
             ))}
           </dl>
+
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a
+              href="https://t.me/Shitzu_Community"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-accent w-full sm:w-auto"
+            >
+              Ask on Telegram →
+            </a>
+            <a href="/blog" className="btn-outline-primary w-full sm:w-auto text-center">
+              Read the blog →
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

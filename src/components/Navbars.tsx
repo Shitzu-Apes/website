@@ -127,14 +127,14 @@ export default function Navbar() {
                     leaveTo="transform opacity-0 scale-95"
                   >
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-black py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <MenuItem href="https://app.ref.finance/#token.0xshitzu.near|near">
-                        BUY on{" "}
+                      <MenuItem href="https://x.rhea.finance/trade">
+                        <span className="whitespace-nowrap">Buy on</span>{" "}
                         <img
                           className="h-6 w-auto rounded-full mx-2"
                           src={RefFinanceLogo.src}
-                          alt="Ref Finance Logo"
+                          alt="Rhea Finance Logo"
                         />
-                        Ref
+                        <span className="whitespace-nowrap">Rhea</span>
                       </MenuItem>
                       <MenuItem href="https://twitter.com/shitzuonnear">
                         <TwitterIcon className="h-6 w-6 mr-2 text-[#1da1f2]" />
