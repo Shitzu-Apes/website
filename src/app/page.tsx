@@ -42,13 +42,13 @@ export default async function Home() {
         <MemeCooking />
       </div>
       <div className="w-full">
+        <OmniBridge />
+      </div>
+      <div className="w-full">
         <ShitzuRevival />
       </div>
       <div className="w-full">
         <EcosystemMap />
-      </div>
-      <div className="w-full">
-        <OmniBridge />
       </div>
       <div className="w-full">
         <LandingBlog blogs={blogmetadata} />
