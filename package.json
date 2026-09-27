@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "node scripts/copyImages.js",
-    "start": "next start"
+    "start": "next start",
+    "test": "node --experimental-strip-types scripts/testClipboard.ts"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",
