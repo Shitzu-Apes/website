@@ -2,16 +2,7 @@ import { ArrowDownIcon, ArrowUpIcon } from "@heroicons/react/24/outline";
 
 import { NearOutlineIcon } from "@/components/Icons";
 
-const CHAINS = [
-  "Ethereum",
-  "Bitcoin",
-  "Solana",
-  "BNB Chain",
-  "Base",
-  "Arbitrum",
-  "Polygon",
-  "Zcash",
-];
+const CHAINS = ["Ethereum", "Solana", "BNB Chain", "Base", "Arbitrum"];
 
 export default function BridgeChains() {
   return (

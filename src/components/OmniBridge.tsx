@@ -14,8 +14,8 @@ export default function OmniBridge() {
           <h2 className="section-title">OmniBridge</h2>
           <p className="section-lead">
             The front end to the official NEAR Omni Bridge. Move assets
-            between NEAR and Ethereum, Bitcoin, Solana, BNB Chain, Base,
-            Arbitrum, Polygon and Zcash.
+            between NEAR and Ethereum, Solana, BNB Chain, Base and
+            Arbitrum.
           </p>
           <p className="section-lead">
             Outbound transfers are signed by NEAR Chain Signatures, a
