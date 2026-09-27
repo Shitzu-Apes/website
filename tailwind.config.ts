@@ -4,18 +4,13 @@ import type { Config } from "tailwindcss";
 import TypographyPluginImport from "@tailwindcss/typography";
 import svgToDataUriImport from "mini-svg-data-uri";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const TypographyPlugin: any =
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   (TypographyPluginImport as any)?.default ?? TypographyPluginImport;
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const svgToDataUri: any =
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   (svgToDataUriImport as any)?.default ?? svgToDataUriImport;
 
 // tailwindcss internals export a `.default`; normalize via require for consistency.
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const flattenColorPalette =
   // @ts-ignore
   require("tailwindcss/lib/util/flattenColorPalette").default ??

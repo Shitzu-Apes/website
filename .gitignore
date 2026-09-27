@@ -6,6 +6,10 @@
 .pnp.js
 .yarn/install-state.gz
 
+# this project uses yarn only
+package-lock.json
+npm-shrinkwrap.json
+
 # testing
 /coverage
 
