@@ -11,7 +11,7 @@ import {
   Group,
   ShapeGeometry,
 } from "three";
-import { SVGLoader } from "three/examples/jsm/Addons.js";
+import { SVGLoader } from "three/examples/jsm/loaders/SVGLoader.js";
 
 import ShitzuWireframe from "@/assets/shitzu-wireframe.svg";
 

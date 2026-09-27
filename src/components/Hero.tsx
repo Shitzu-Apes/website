@@ -1,5 +1,5 @@
 import ChainTab from "@/components/ChainTab";
-import Scene from "@/components/Scene";
+import SceneLoader from "@/components/SceneLoader";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import HeroBackground from "./HeroBackground";
 import { NearOutlineIcon, TelegramIcon } from "./Icons";
@@ -49,7 +49,7 @@ export default function Hero() {
         </div>
 
         <div className="w-full md:w-2/5 h-[450px] md:min-h-[100vh]">
-          <Scene />
+          <SceneLoader />
         </div>
       </div>
     </div>
