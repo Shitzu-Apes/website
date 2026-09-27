@@ -2,34 +2,18 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import Navbar from "@/components/Navbars";
-import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 
 import FavIcon from "@/assets/favicon.ico";
 import OGImage from "@/assets/og.png";
+import { absoluteUrl, siteUrl } from "@/utils/site";
 
 import "./globals.css";
-import BottomBanner from "@/components/BottomBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 
-function getMetadataBase(): URL | undefined {
-  const raw = process.env.METADATABASE?.trim();
-  // Avoid common “set-but-invalid” values (e.g. METADATABASE=undefined)
-  if (!raw || raw.toLowerCase() === "undefined" || raw.toLowerCase() === "null") {
-    return undefined;
-  }
-  try {
-    return new URL(raw);
-  } catch {
-    return undefined;
-  }
-}
-
-const metadataBase = getMetadataBase();
-
 export const metadata: Metadata = {
-  ...(metadataBase ? { metadataBase } : {}),
+  metadataBase: siteUrl,
   title: "SHITZU - 306,242,069",
   description:
     "Being born on April Fool's, $SHITZU keeps it foolishly simple: 576,167,000 tokens, period. All circulating, no lock-ups, no vesting.",
@@ -45,7 +29,7 @@ export const metadata: Metadata = {
     "aurora",
   ],
   icons: {
-    icon: FavIcon.src,
+    icon: absoluteUrl(FavIcon.src),
   },
   appleWebApp: {
     title: "SHITZU",
@@ -54,10 +38,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://shitzuapes.xyz/",
+    url: absoluteUrl("/"),
     images: [
       {
-        url: OGImage.src,
+        url: absoluteUrl(OGImage.src),
         width: 1920,
         height: 1080,
         alt: "SHITZU",
@@ -69,7 +53,7 @@ export const metadata: Metadata = {
     creator: "@shitzuonnear",
     images: [
       {
-        url: OGImage.src,
+        url: absoluteUrl(OGImage.src),
         alt: "SHITZU",
       },
     ],

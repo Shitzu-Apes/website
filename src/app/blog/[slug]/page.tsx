@@ -8,7 +8,8 @@ import Breadcrumbs from "@/components/BreadCrumbs";
 import Link from "next/link";
 import { Metadata, ResolvingMetadata } from "next";
 import toDataURL from "@/utils/toDataURL";
-import { readFrontmatter } from "@/utils/markdown";
+import { readFrontmatter, stripMarkdown } from "@/utils/markdown";
+import { absoluteUrl } from "@/utils/site";
 import { BlogMetadata as BlogMetadataSchema } from "@/utils/blog";
 
 type BlogMetadata = { slug: string };
@@ -20,21 +21,26 @@ export async function generateMetadata(
   const post = readFileSync(`./blogs/${params.slug}/readme.md`, "utf-8");
 
   const frontmatter = post.split("---")[1];
-  const title =
-    frontmatter.match(/title: (.*)/)?.[1] + " - SHITZU" ||
-    (await parent).title ||
-    "";
+  const rawTitle = frontmatter.match(/title: (.*)/)?.[1];
+  const rawDescription = frontmatter.match(/description: (.*)/)?.[1];
+
+  // `rawTitle && ...` rather than string concatenation, so a missing title
+  // falls through to the parent instead of yielding "undefined - SHITZU".
+  const title = rawTitle ? `${rawTitle} - SHITZU` : (await parent).title || "";
   const description =
-    frontmatter.match(/description: (.*)/)?.[1] ||
+    (rawDescription && stripMarkdown(rawDescription)) ||
     (await parent).description ||
     "";
 
   const files = readdirSync(`./blogs/${params.slug}`);
-  const thumbnail = files.find((file) => file.startsWith("thumbnail"));
+  const thumbnail = files.find((file) =>
+    file.toLowerCase().match(/^thumbnail\.(png|webp|jpeg|jpg)$/)
+  );
 
   if (thumbnail) {
-    const basePath = process.env.BASEPATH ? `${process.env.BASEPATH}/` : "";
-    const thumbnailPath = `${process.env.METADATABASE}/${basePath}blog/${params.slug}/${thumbnail}`;
+    const thumbnailPath = absoluteUrl(
+      `/blog/${params.slug}/${thumbnail}`
+    );
 
     return {
       title,
@@ -79,7 +85,9 @@ export default async function BlogPage({
   const frontmatter = await readFrontmatter(`./blogs/${slug}/readme.md`);
 
   const files = readdirSync(`./blogs/${slug}`);
-  const thumbnail = files.find((file) => file.startsWith("thumbnail"));
+  const thumbnail = files.find((file) =>
+    file.toLowerCase().match(/^thumbnail\.(png|webp|jpeg|jpg)$/)
+  );
   const thumbnailBase64 = thumbnail
     ? toDataURL(`./blogs/${slug}/${thumbnail}`)
     : "";

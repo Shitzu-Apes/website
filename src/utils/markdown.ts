@@ -17,3 +17,18 @@ export async function readFrontmatter(filePath: string) {
 
   return fm;
 }
+
+/**
+ * Strips inline emphasis and code markers from a string.
+ * Frontmatter descriptions are authored as Markdown, but they are emitted into
+ * <meta> tags verbatim, so the markers would otherwise leak into search results
+ * and social cards.
+ */
+export function stripMarkdown(value: string): string {
+  return value
+    .replace(/`([^`]*)`/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .trim();
+}

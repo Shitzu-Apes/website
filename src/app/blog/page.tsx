@@ -18,7 +18,9 @@ export default async function BlogPage() {
 
     // find thumbnail.* in the blog folder
     const dirFiles = readdirSync(`./blogs/${dir.name}`);
-    const thumbnail = dirFiles.find((file) => file.startsWith("thumbnail"));
+    const thumbnail = dirFiles.find((file) =>
+      file.toLowerCase().match(/^thumbnail\.(png|webp|jpeg|jpg)$/)
+    );
 
     // if thumbnail exists, read and convert it to base64
     let thumbnailBase64 = thumbnail
