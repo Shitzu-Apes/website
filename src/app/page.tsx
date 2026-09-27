@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import LandingBlog from "@/components/LandingBlog";
 import MemeCooking from "@/components/MemeCooking";
 import ShitzuRevival from "@/components/ShitzuRevival";
-import TokenFarm from "@/components/TokenFarm";
+import OmniBridge from "@/components/OmniBridge";
 import Tokenomics from "@/components/Tokenomics";
 import EcosystemMap from "@/components/EcosystemMap";
 import { BlogMetadata } from "@/utils/blog";
@@ -48,7 +48,7 @@ export default async function Home() {
         <EcosystemMap />
       </div>
       <div className="w-full">
-        <TokenFarm />
+        <OmniBridge />
       </div>
       <div className="w-full">
         <LandingBlog blogs={blogmetadata} />
