@@ -6,8 +6,10 @@ import Clipboard from "@/components/Clipboard";
 import {
   DexTool,
   DexScreenerLogo,
+  JupiterLogo,
   NearBlocksLogo,
   RefFinanceLogo,
+  SolscanLogo,
 } from "./Icons";
 
 const NEAR_CONTRACT = "token.0xshitzu.near";
@@ -100,12 +102,22 @@ export default function ChainTab() {
 
       <ChainGroup name="Solana" contract={SOLANA_CONTRACT}>
         <LinkButton href={`https://solscan.io/token/${SOLANA_CONTRACT}`}>
+          <img
+            src={SolscanLogo.src}
+            alt="Solscan Logo"
+            className="h-6 mx-1 w-auto rounded-full"
+          />
           Explorer
         </LinkButton>
         <LinkButton
           href={`https://jup.ag/?sell=${WRAPPED_SOL}&buy=${SOLANA_CONTRACT}`}
         >
           <span className="whitespace-nowrap">Swap on</span>
+          <img
+            src={JupiterLogo.src}
+            alt="Jupiter Logo"
+            className="h-6 mx-1 w-auto"
+          />
           <span className="whitespace-nowrap">Jupiter</span>
         </LinkButton>
       </ChainGroup>

@@ -82,3 +82,5 @@ export { default as MintBaseLogo } from "@/assets/MintBase.png";
 export { default as MitteLogo } from "@/assets/Mitte.jpg";
 export { default as TradeportLogo } from "@/assets/Tradeport.png";
 export { default as DexTool } from "@/assets/dextools.png";
+export { default as SolscanLogo } from "@/assets/solscan.svg";
+export { default as JupiterLogo } from "@/assets/jupiter.svg";
